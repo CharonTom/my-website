@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.5afbf067.css",
-    "main.js": "/my-website/static/js/main.c7b264b0.js",
+    "main.css": "/my-website/static/css/main.d40f357f.css",
+    "main.js": "/my-website/static/js/main.d339176f.js",
     "static/media/my-website.png": "/my-website/static/media/my-website.fae3b8a52b6a8044c812.png",
     "static/media/kasa.png": "/my-website/static/media/kasa.2dd45f5b89548de95cef.png",
     "static/media/omf.png": "/my-website/static/media/omf.bcff8005a28d005d0006.png",
@@ -12,7 +12,9 @@
     "static/media/kanap.png": "/my-website/static/media/kanap.ab1b18adfaa75e17aff7.png",
     "static/media/js.png": "/my-website/static/media/js.ba0a928588f389c91981.png",
     "static/media/photo-de-profil.png": "/my-website/static/media/photo-de-profil.74ab7fdf3da135493331.png",
+    "static/media/postman.png": "/my-website/static/media/postman.0ae09165363689b29d62.png",
     "static/media/wallpaper-dev.jpg": "/my-website/static/media/wallpaper-dev.419960377233dc6d5f85.jpg",
+    "static/media/expressJS.png": "/my-website/static/media/expressJS.915b89629a5fefdb6ca0.png",
     "static/media/github.png": "/my-website/static/media/github.ba57b0e0a8e0600a63e3.png",
     "static/media/html.png": "/my-website/static/media/html.f3aa7827cd5160f3fc1c.png",
     "static/media/css.png": "/my-website/static/media/css.1334cb45a7d5ad096543.png",
@@ -22,13 +24,14 @@
     "static/media/profil.png": "/my-website/static/media/profil.b854b6fa60316802f9b9.png",
     "static/media/portfolio.png": "/my-website/static/media/portfolio.bc7d84785c277bba5df0.png",
     "static/media/nodejs.png": "/my-website/static/media/nodejs.01ddef1625f757872f44.png",
+    "static/media/mongoDB.png": "/my-website/static/media/mongoDB.c964002ecef4971216d0.png",
     "static/media/contact.png": "/my-website/static/media/contact.5ef33862ec0629c1996a.png",
     "index.html": "/my-website/index.html",
-    "main.5afbf067.css.map": "/my-website/static/css/main.5afbf067.css.map",
-    "main.c7b264b0.js.map": "/my-website/static/js/main.c7b264b0.js.map"
+    "main.d40f357f.css.map": "/my-website/static/css/main.d40f357f.css.map",
+    "main.d339176f.js.map": "/my-website/static/js/main.d339176f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5afbf067.css",
-    "static/js/main.c7b264b0.js"
+    "static/css/main.d40f357f.css",
+    "static/js/main.d339176f.js"
   ]
 }
