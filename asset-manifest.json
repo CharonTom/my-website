@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.5a1d6240.css",
-    "main.js": "/my-website/static/js/main.59ed04cc.js",
+    "main.js": "/my-website/static/js/main.191390cb.js",
     "static/media/my-website.png": "/my-website/static/media/my-website.fae3b8a52b6a8044c812.png",
     "static/media/kasa.png": "/my-website/static/media/kasa.2dd45f5b89548de95cef.png",
     "static/media/omf.png": "/my-website/static/media/omf.bcff8005a28d005d0006.png",
-    "static/media/CV2023.pdf": "/my-website/static/media/CV2023.263c697a05789ee71270.pdf",
     "static/media/piiquante.png": "/my-website/static/media/piiquante.e944fc0c4cda3796b2be.png",
     "static/media/panthere.png": "/my-website/static/media/panthere.a6ece60bffd0e58e4b3e.png",
     "static/media/sass.png": "/my-website/static/media/sass.521ac7a296bb66e6547f.png",
     "static/media/kanap.png": "/my-website/static/media/kanap.ab1b18adfaa75e17aff7.png",
     "static/media/js.png": "/my-website/static/media/js.ba0a928588f389c91981.png",
+    "static/media/CV2023.pdf": "/my-website/static/media/CV2023.8b2d229e8cc3d13c7141.pdf",
     "static/media/photo-de-profil.png": "/my-website/static/media/photo-de-profil.74ab7fdf3da135493331.png",
     "static/media/postman.png": "/my-website/static/media/postman.4fadad892c42866d5ced.png",
     "static/media/wallpaper-dev.jpg": "/my-website/static/media/wallpaper-dev.419960377233dc6d5f85.jpg",
@@ -28,10 +28,10 @@
     "static/media/contact.png": "/my-website/static/media/contact.5ef33862ec0629c1996a.png",
     "index.html": "/my-website/index.html",
     "main.5a1d6240.css.map": "/my-website/static/css/main.5a1d6240.css.map",
-    "main.59ed04cc.js.map": "/my-website/static/js/main.59ed04cc.js.map"
+    "main.191390cb.js.map": "/my-website/static/js/main.191390cb.js.map"
   },
   "entrypoints": [
     "static/css/main.5a1d6240.css",
-    "static/js/main.59ed04cc.js"
+    "static/js/main.191390cb.js"
   ]
 }
