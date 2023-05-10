@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.6affa42c.css",
-    "main.js": "/my-website/static/js/main.f036e6e0.js",
+    "main.css": "/my-website/static/css/main.55c871d2.css",
+    "main.js": "/my-website/static/js/main.6fa99a42.js",
     "static/media/my-website.png": "/my-website/static/media/my-website.fae3b8a52b6a8044c812.png",
     "static/media/kasa.png": "/my-website/static/media/kasa.2dd45f5b89548de95cef.png",
     "static/media/omf.png": "/my-website/static/media/omf.bcff8005a28d005d0006.png",
@@ -27,12 +27,14 @@
     "static/media/nodejs.png": "/my-website/static/media/nodejs.01ddef1625f757872f44.png",
     "static/media/mongoDB.png": "/my-website/static/media/mongoDB.c964002ecef4971216d0.png",
     "static/media/contact.png": "/my-website/static/media/contact.5ef33862ec0629c1996a.png",
+    "static/media/Sun.svg": "/my-website/static/media/Sun.684fc35d88479e175fb4f8192d7ac223.svg",
     "index.html": "/my-website/index.html",
-    "main.6affa42c.css.map": "/my-website/static/css/main.6affa42c.css.map",
-    "main.f036e6e0.js.map": "/my-website/static/js/main.f036e6e0.js.map"
+    "static/media/Moon.svg": "/my-website/static/media/Moon.1c08648cf17a3594b866b8a18858df52.svg",
+    "main.55c871d2.css.map": "/my-website/static/css/main.55c871d2.css.map",
+    "main.6fa99a42.js.map": "/my-website/static/js/main.6fa99a42.js.map"
   },
   "entrypoints": [
-    "static/css/main.6affa42c.css",
-    "static/js/main.f036e6e0.js"
+    "static/css/main.55c871d2.css",
+    "static/js/main.6fa99a42.js"
   ]
 }
