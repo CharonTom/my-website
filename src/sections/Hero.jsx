@@ -12,7 +12,7 @@ function Hero() {
   return (
     <section className="section" id="hero">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
           <div className="">
             {/* text hi */}
             <div className="text-center lg:text-left mb-5">
@@ -85,7 +85,7 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="box overflow-hidden flex justify-center items-end mx-auto lg:mx-0">
+          <div className="box overflow-hidden  h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0">
             <img className="w-full" src={Me} alt="tom charon" />
           </div>
         </div>
