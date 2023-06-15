@@ -36,18 +36,18 @@ function Portfolio() {
             techno={
               <div className="flex justify-around">
                 <img
-                  className="w-14 bg-white rounded-full border-2 border-primary"
+                  className="w-14 bg-white rounded-full border-[3px] border-primary"
                   src={logoHTML}
                   alt="logo's techno"
                 />
                 <img
-                  className="w-14 bg-white rounded-full border-2 border-primary"
-                  src={logoHTML}
+                  className="w-14 bg-white rounded-full border-[3px] border-primary"
+                  src={logoCSS}
                   alt="logo's techno"
                 />
                 <img
-                  className="w-14 bg-white rounded-full border-2 border-primary"
-                  src={logoHTML}
+                  className="w-14 bg-white rounded-full border-[3px] border-primary"
+                  src={logoJS}
                   alt="logo's techno"
                 />
               </div>

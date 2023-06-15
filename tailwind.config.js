@@ -23,6 +23,7 @@ module.exports = {
         secondary: "#1f1f38",
         secondaryVariant: "#2c2c6c",
         light: "rgba(255, 255, 255, 0.6)",
+        limpidBlue: "rgba(77, 181, 255, 0.9)",
       },
       backgroundImage: {
         texture: "url('./assets/bg-texture.png')",
