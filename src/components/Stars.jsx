@@ -4,7 +4,7 @@ function Stars({ score }) {
 
   const stars = [1, 2, 3, 4, 5];
   return (
-    <div className="flex text-sm lg:text-base">
+    <div className="flex text-[12px] lg:text-base">
       {stars.map((level) =>
         score >= level ? (
           <div key={level.toString()}>{fullStar}</div>

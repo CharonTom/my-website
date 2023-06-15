@@ -2,9 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-  font-size: 27px;
-  font-weight: bold;
+@layer base {
+  body {
+    @apply font-primary text-white;
+  }
+
+  .section {
+    @apply py-24 lg:min-h-screen flex items-center;
+  }
+
+  h1 {
+    @apply text-[27px] font-bold;
+  }
+  h2 {
+    @apply font-secondary text-primary m-6 text-center text-[24px] font-semibold;
+  }
+  h3 {
+    @apply text-[19px] font-semibold bg-secondaryVariant text-center text-lg rounded-lg py-1;
+  }
+
+  h4 {
+    @apply text-center;
+  }
+
+  .bg-skill-stack {
+    @apply bg-gradient-to-b from-primaryVariant to-secondary;
+  }
+  .bg-portfolio-cards {
+    @apply bg-gradient-to-b from-primaryVariant to-secondary;
+  }
+  .bg-portfolio-text {
+    @apply bg-gradient-to-t from-primaryVariant to-secondaryVariant;
+  }
 }
 
 /* ---------------------Bouton----------------- 2 */
@@ -40,7 +69,7 @@ h1 {
   background: #4db5ff;
   border-radius: 5px;
   z-index: -1;
-  transition: transform 0.5s;
+  transition: transform 0.8s;
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleX(0);
@@ -82,7 +111,7 @@ h1 {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   z-index: -1;
-  transition: transform 0.5s;
+  transition: transform 0.8s;
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleX(0);
@@ -124,19 +153,9 @@ h1 {
 .bg-skill-cards {
   background: linear-gradient(rgba(255, 255, 255, 0.6), #2c2c6c);
 }
-.bg-skill-stack {
+/* .bg-skill-stack {
   background: linear-gradient(rgba(77, 181, 255, 0.4), #1f1f38);
-}
+} */
 .bx-shad {
   box-shadow: 1px 1px 5px #4db5ff;
-}
-
-@layer base {
-  body {
-    @apply font-primary text-white;
-  }
-
-  .section {
-    @apply py-24 lg:min-h-screen flex items-center;
-  }
 }

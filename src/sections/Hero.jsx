@@ -31,7 +31,7 @@ function Hero() {
                     "Développeur React",
                     2000,
                   ]}
-                  speed={50}
+                  speed={90}
                   className="text-primary"
                   wrapper="span"
                   repeat={Infinity}

@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: "Poppins",
+      secondary: "Lora",
     },
     container: {
       padding: {
@@ -23,7 +24,10 @@ module.exports = {
         secondaryVariant: "#2c2c6c",
         light: "rgba(255, 255, 255, 0.6)",
       },
-      backgroundImage: { texture: "url('./assets/bg-texture.png')" },
+      backgroundImage: {
+        texture: "url('./assets/bg-texture.png')",
+        workBg: "url(./assets/img/wallpaper-dev.jpg)",
+      },
     },
   },
   plugins: [],
