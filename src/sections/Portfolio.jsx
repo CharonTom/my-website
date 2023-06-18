@@ -25,7 +25,7 @@ function Portfolio() {
       className="section container overflow-hidden mx-auto"
     >
       <div className="container">
-        <h2 className="text-center">Mon Portfolio</h2>
+        <h2 className="">Mon Portfolio</h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm-grid-cols-1 gap-10">
           <ProjetCard
             img={imageKanap}

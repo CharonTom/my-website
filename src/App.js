@@ -7,6 +7,7 @@ import Contact from "./sections/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Contact />
-        <div className="h-[4000px]"></div>
+        <ScrollToTop />
         <Footer />
       </Router>
     </div>

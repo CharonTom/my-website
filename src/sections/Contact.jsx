@@ -21,13 +21,13 @@ function Contact() {
     }, 1500);
   };
   return (
-    <section className="container mx-auto" id="contact">
-      <div className="mx-auto">
+    <section className="section container mx-auto" id="contact">
+      <div className="container">
         <h2>Contactez-moi</h2>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-[12%]">
-          <div className="w-fit flex flex-col gap-5 md:mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 ">
             <a href="mailto:charon.s.tom@gmail.com">
-              <article className="bg-secondaryVariant p-5 rounded-lg text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
+              <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
                 <h4>
                   Email <i className="fa-solid fa-envelope"></i>
                 </h4>
@@ -35,7 +35,7 @@ function Contact() {
               </article>
             </a>
             <a href="tel:+33621042123">
-              <article className="bg-secondaryVariant p-5 rounded-lg text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
+              <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
                 <h4>
                   Téléphone <i className="fa-solid fa-phone"></i>
                 </h4>
@@ -47,7 +47,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <article className="bg-secondaryVariant p-5 rounded-lg text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
+              <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
                 <h4>
                   Location <i className="fa-solid fa-location-dot"></i>
                 </h4>
@@ -56,26 +56,26 @@ function Contact() {
             </a>
           </div>
           <form
-            className="flex flex-col gap-5 mb-20"
+            className="flex flex-col gap-[10px] "
             ref={form}
             onSubmit={sendEmail}
           >
             <input
-              className="p-4 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
+              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
               type="text"
               name="name"
               placeholder="Nom"
               required
             />
             <input
-              className="p-4 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
+              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
               type="email"
               name="email"
               placeholder="Email"
               required
             />
             <textarea
-              className="p-4 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
+              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
               name="message"
               rows="10"
               placeholder="Message"
@@ -84,7 +84,11 @@ function Contact() {
             <button type="submit" className="second-btn">
               Envoyer
             </button>
-            <div className={!isActive ? `confirmation` : `confirmation show`}>
+            <div
+              className={` fixed  p-2 rounded-md border-2 border-light bg-primary text-secondary ${
+                !isActive ? `-bottom-20` : `bottom-[20%]`
+              } border w-fit left-[50%] z-20 transition-all duration-400 -ml-[81px]`}
+            >
               Message envoyé !
             </div>
           </form>
