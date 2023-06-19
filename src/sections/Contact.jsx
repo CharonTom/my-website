@@ -23,22 +23,22 @@ function Contact() {
   return (
     <section className="section container mx-auto" id="contact">
       <div className="container">
-        <h2>Contactez-moi</h2>
+        <h2 className="mb-12">Contactez-moi</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 ">
             <a href="mailto:charon.s.tom@gmail.com">
               <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
-                <h4>
+                <h5>
                   Email <i className="fa-solid fa-envelope"></i>
-                </h4>
+                </h5>
                 <h5>charon.s.tom@gmail.com</h5>
               </article>
             </a>
             <a href="tel:+33621042123">
               <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
-                <h4>
+                <h5>
                   Téléphone <i className="fa-solid fa-phone"></i>
-                </h4>
+                </h5>
                 <h5> +33 6 21 04 21 23</h5>
               </article>
             </a>
@@ -48,9 +48,9 @@ function Contact() {
               rel="noopener noreferrer"
             >
               <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
-                <h4>
+                <h5>
                   Location <i className="fa-solid fa-location-dot"></i>
-                </h4>
+                </h5>
                 <h5> 69000 Lyon, France</h5>
               </article>
             </a>

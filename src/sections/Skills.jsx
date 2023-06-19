@@ -20,7 +20,10 @@ function Skills() {
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">
               <h3 className="">Front-End</h3>
-              <div className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5">
+              <div
+                className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5"
+                data-aos="fade-up"
+              >
                 <SkillCards name={"React"} logo={logoReact} score={4} />
                 <SkillCards name={"HMTL"} logo={logoHTML} score={5} />
                 <SkillCards name={"CSS"} logo={logoCSS} score={5} />
@@ -35,7 +38,10 @@ function Skills() {
             </div>
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">
               <h3 className="">Back-End</h3>
-              <div className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5">
+              <div
+                className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5"
+                data-aos="fade-up"
+              >
                 <SkillCards name={"Node.js"} logo={logoNodeJS} score={3} />
                 <SkillCards name={"Express.js"} logo={logoExpress} score={3} />
                 <SkillCards name={"MongoDB"} logo={logoMongo} score={3} />

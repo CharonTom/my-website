@@ -13,7 +13,7 @@ function Hero() {
     <section className="section" id="hero">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
-          <div className="">
+          <div data-aos="fade-right">
             {/* text hi */}
             <div className="text-center lg:text-left mb-5">
               <p className="font-semibold">Bonjour !</p>
@@ -70,10 +70,10 @@ function Hero() {
                       opacity: "0",
                     }
               }
-              className="transition-all duration-500 ease-in-out overflow-hidden"
+              className="transition-all duration-1000 ease-in-out overflow-hidden"
             >
               <p
-                className="text-[12px] text-center p-3 w-[340px] border-2
+                className="text-[14px] text-center p-3 w-[340px] border-2
               border-primaryVariant rounded-xl mx-auto lg:mx-0 m-4"
               >
                 Passionné par le développement web et fraichement diplômé dans
@@ -85,7 +85,10 @@ function Hero() {
               </p>
             </div>
           </div>
-          <div className="box overflow-hidden  h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0">
+          <div
+            className="box overflow-hidden  h-[300px] lg:h-[400px] w-[300px]  lg:w-[400px] flex justify-center items-end mx-auto lg:mx-0"
+            data-aos="fade-left"
+          >
             <img className="w-full" src={Me} alt="tom charon" />
           </div>
         </div>

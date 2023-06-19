@@ -15,14 +15,14 @@
     @apply text-[27px] font-bold;
   }
   h2 {
-    @apply font-secondary text-primary m-6 text-center text-[24px] font-semibold;
+    @apply font-secondary text-primary my-6 text-center text-[24px] font-semibold;
   }
   h3 {
     @apply text-[19px] font-semibold bg-secondaryVariant text-center text-lg rounded-lg py-1;
   }
 
   h4 {
-    @apply text-center;
+    @apply text-center mb-6;
   }
 
   .bg-skill-stack {
