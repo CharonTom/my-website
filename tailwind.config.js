@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: ["class", '[data-mode="light"]'],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
@@ -24,6 +25,7 @@ module.exports = {
         secondaryVariant: "#2c2c6c",
         light: "rgba(255, 255, 255, 0.6)",
         limpidBlue: "rgba(77, 181, 255, 0.9)",
+        bgLightMode: "rgb(241, 240, 240)",
       },
       backgroundImage: {
         texture: "url('./assets/bg-texture.png')",
