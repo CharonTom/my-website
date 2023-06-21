@@ -58,6 +58,18 @@
   }
 }
 
+.bg-light-switch {
+  background: #242424;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.bg-dark-switch {
+  background: #242424;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
 /* .active {
   transform: scale(1.25);
 } */
@@ -219,8 +231,6 @@
 /*----------------- Code pour le Switch Light------------------  */
 
 .dark_mode {
-  margin-top: -20px;
-  margin-left: 10px;
 }
 
 .dark_mode_label {

@@ -9,7 +9,7 @@ const LightMode = () => {
   let checked = theme === "dark" ? true : false;
 
   return (
-    <div className="dark_mode">
+    <div className="dark_mode flex ">
       <input
         className="dark_mode_input"
         type="checkbox"

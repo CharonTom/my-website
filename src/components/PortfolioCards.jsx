@@ -1,4 +1,10 @@
+import translate from "../translate";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
+
 function ProjetCard({ titre, img, description, techno, button }) {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div
       className="min-w-[220px] rounded-xl  relative overflow-hidden
@@ -15,7 +21,7 @@ function ProjetCard({ titre, img, description, techno, button }) {
           {description}
         </p>
         <div className="">
-          <h4 className="">Techno utilisées</h4>
+          <h4 className="">{translate[language].usedTechnos}</h4>
           <div className="">{techno}</div>
         </div>
         <div className="absolute bg-limpidBlue w-full h-full left-0 border border-2 border-gray-200 rounded-lg flex flex-col justify-center items-center -bottom-[calc(100%+100px)] group-hover:bottom-0 transition-all duration-700">

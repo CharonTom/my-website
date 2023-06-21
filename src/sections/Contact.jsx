@@ -1,7 +1,12 @@
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import translate from "../translate";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
 
 function Contact() {
+  const { language } = useContext(LanguageContext);
+
   const [isActive, SetIsActive] = useState(false);
   const form = useRef();
 
@@ -23,7 +28,7 @@ function Contact() {
   return (
     <section className="section container mx-auto" id="contact">
       <div className="container">
-        <h2 className="mb-12">Contactez-moi</h2>
+        <h2 className="mb-12">{translate[language].contact}</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 ">
             <a href="mailto:charon.s.tom@gmail.com">
@@ -37,7 +42,8 @@ function Contact() {
             <a href="tel:+33621042123">
               <article className="contact-btn">
                 <h5>
-                  Téléphone <i className="fa-solid fa-phone"></i>
+                  {translate[language].phone}{" "}
+                  <i className="fa-solid fa-phone"></i>
                 </h5>
                 <h5> +33 6 21 04 21 23</h5>
               </article>
@@ -64,7 +70,7 @@ function Contact() {
               className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               type="text"
               name="name"
-              placeholder="Nom"
+              placeholder={translate[language].nameInput}
               required
             />
             <input
@@ -82,14 +88,14 @@ function Contact() {
               required
             ></textarea>
             <button type="submit" className="second-btn">
-              Envoyer
+              {translate[language].sendButton}
             </button>
             <div
               className={` fixed  p-2 rounded-md border-2 border-light bg-primary text-secondary ${
                 !isActive ? `-bottom-20` : `bottom-[20%]`
               } border w-fit left-[50%] z-20 transition-all duration-400 -ml-[81px]`}
             >
-              Message envoyé !
+              {translate[language].messageSend}
             </div>
           </form>
         </div>

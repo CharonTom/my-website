@@ -10,12 +10,17 @@ import logoNodeJS from "../assets/logos/nodejs.png";
 import logoMongo from "../assets/logos/mongoDB.png";
 import logoPostman from "../assets/logos/postman.png";
 import logoExpress from "../assets/logos/expressJS.png";
+import translate from "../translate";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
 
 function Skills() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <section className="section" id="skills">
       <div className="mx-auto">
-        <h2 className="">Mes Compétences</h2>
+        <h2 className=""> {translate[language].skills}</h2>
         <div className="sm:bg-workBg bg-cover p-6">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">

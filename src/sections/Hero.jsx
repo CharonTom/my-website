@@ -1,10 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import CV from "../assets/CV2023.pdf";
 import Me from "../assets/img/photo-de-profil.png";
 import { useState, useRef, useContext } from "react";
-import translate from "../tradtuction";
+import translate from "../translate";
 import { LanguageContext } from "../contexts/LanguageContext";
 
 function Hero() {
@@ -19,14 +18,14 @@ function Hero() {
           <div data-aos="fade-right">
             {/* text hi */}
             <div className="text-center lg:text-left mb-5">
-              <p className="font-semibold">Bonjour !</p>
+              <p className="font-semibold"> {translate[language].Hi}</p>
               <h1>
-                Je m'appelle <span className="text-primary">Tom</span> <br></br>
-                {translate[language].title}
+                {translate[language].MyName}
+                <span className="text-primary">Tom</span>
               </h1>
 
               <div className="font-semibold">
-                <span className="mr-2">Je suis</span>
+                <span className="mr-2"> {translate[language].Iam}</span>
                 <TypeAnimation
                   sequence={[
                     "Développeur Web",
@@ -51,7 +50,7 @@ function Hero() {
                 }}
                 className="btn"
               >
-                A Propos de moi
+                {translate[language].aboutButton}
               </button>
               <a
                 className="second-btn"
@@ -59,7 +58,7 @@ function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Télécharger mon CV
+                {translate[language].cvButton}
               </a>
             </div>
             {/* speech */}
@@ -81,12 +80,7 @@ function Hero() {
                 className="text-[14px] text-center p-3 w-[340px] border-2
               border-primaryVariant rounded-xl mx-auto lg:mx-0 m-4"
               >
-                Passionné par le développement web et fraichement diplômé dans
-                le secteur. Je mets mes compétences au service d’une entreprise
-                recherchant un développeur Front-End. Grâce à un parcours de
-                formation approfondi sur le Framework React, je me suis
-                spécialisé dans la conception et l’adaptation de sites et
-                d’applications web.
+                {translate[language].speech}
               </p>
             </div>
           </div>

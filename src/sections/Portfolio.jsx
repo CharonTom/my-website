@@ -17,22 +17,25 @@ import imagePanthere from "../assets/img/panthere.png";
 import imageMyWebsite from "../assets/img/my-website.png";
 import ProjetCard from "../components/PortfolioCards";
 import PortfolioButtonsCard from "../components/PortfolioButtonsCard";
+import translate from "../translate";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
 
 function Portfolio() {
+  const { language } = useContext(LanguageContext);
+
   return (
     <section
       id="portfolio"
       className="section container overflow-hidden mx-auto"
     >
       <div className="container">
-        <h2 className="">Mon Portfolio</h2>
+        <h2 className="">{translate[language].portfolio}</h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm-grid-cols-1 gap-10">
           <ProjetCard
             img={imageOMF}
             titre={"OhMyFood!"}
-            description={
-              "Créer un prototype de site en intégrant les maquettes conçue par un designer UI. Le projet a été développé en HTML/CSS avec le préprocesseur SASS tout en gardant une approche mobile-first. Les contraintes graphiques et d'animations ont été faites sans JavaScript"
-            }
+            description={translate[language].proj1}
             techno={
               <div className="flex justify-around">
                 <img
@@ -74,9 +77,7 @@ function Portfolio() {
           <ProjetCard
             img={imageKanap}
             titre={"Kanap"}
-            description={
-              "Unifier le Back-End et le Front-End d'un site web e-commerce en intégrant les éléments de l'API dans les différentes pages web en JavaScript. L'utilisateur doit pouvoir visualiser l'ensemble des produits, ajouter un ou plusieurs article dans un panier, modifier ou supprimer son panier et passer commande."
-            }
+            description={translate[language].proj2}
             techno={
               <div className="flex justify-around">
                 <img
@@ -114,9 +115,7 @@ function Portfolio() {
           <ProjetCard
             img={imageKasa}
             titre={"Kasa"}
-            description={
-              "Kasa est une application web de location immobilière. Ce projet est entièrement développer sur React est la gestion des évenements est faite sans librairie. Les maquettes à intégrer ont été réalisées par un designer UI depuis l'outil de design Figma."
-            }
+            description={translate[language].proj3}
             techno={
               <div className="flex justify-around">
                 <img
@@ -166,9 +165,7 @@ function Portfolio() {
           <ProjetCard
             img={imagePiiquante}
             titre={"Hot Takes"}
-            description={
-              "Hot Takes est une application web d'avis critiques spécialisé dans les sauces. Le but était de construire une API REST sécurisée qui respecte les règles de l'OWASP. L'application permet aux utilisateurs de poster et modifier des sauces avec également une fonction like et dislike."
-            }
+            description={translate[language].proj4}
             techno={
               <div className="flex justify-around">
                 <img
@@ -211,9 +208,7 @@ function Portfolio() {
           <ProjetCard
             img={imagePanthere}
             titre={"La Panthere"}
-            description={
-              "Ce site web avait des problèmes de référencement. Le site a été analysé et amélioré pour réduire le temps de chargement et appliquer les bonnes pratiques du SEO et d'accessibilité. Un rapport d'optimisation a été réalisé pour indiquer les résultats pré et post optimisation."
-            }
+            description={translate[language].proj5}
             techno={
               <div className="flex justify-around">
                 <img
@@ -250,9 +245,7 @@ function Portfolio() {
           <ProjetCard
             img={imageMyWebsite}
             titre={"My Website"}
-            description={
-              "Il s'agit bien sûr de mon Portfolio, le site sur lequel vous vous trouvez. Il a été entièrement conçu avec React et ses librairies. J'ai également utilisé le préprocesseur SASS pour le style et EmailJS pour la redirection des messages sur ma boite mail."
-            }
+            description={translate[language].proj6}
             techno={
               <div className="flex justify-around">
                 <img
