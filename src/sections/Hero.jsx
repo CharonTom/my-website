@@ -3,14 +3,17 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import CV from "../assets/CV2023.pdf";
 import Me from "../assets/img/photo-de-profil.png";
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import translate from "../tradtuction";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   const refContent = useRef();
+  const { language } = useContext(LanguageContext);
 
   return (
-    <section className="section" id="hero">
+    <section className="section dark:text-secondary" id="hero">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
           <div data-aos="fade-right">
@@ -18,8 +21,10 @@ function Hero() {
             <div className="text-center lg:text-left mb-5">
               <p className="font-semibold">Bonjour !</p>
               <h1>
-                Je m'appelle <span className="text-primary">Tom</span>
+                Je m'appelle <span className="text-primary">Tom</span> <br></br>
+                {translate[language].title}
               </h1>
+
               <div className="font-semibold">
                 <span className="mr-2">Je suis</span>
                 <TypeAnimation

@@ -27,7 +27,7 @@ function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 ">
             <a href="mailto:charon.s.tom@gmail.com">
-              <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
+              <article className="contact-btn">
                 <h5>
                   Email <i className="fa-solid fa-envelope"></i>
                 </h5>
@@ -35,7 +35,7 @@ function Contact() {
               </article>
             </a>
             <a href="tel:+33621042123">
-              <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
+              <article className="contact-btn">
                 <h5>
                   Téléphone <i className="fa-solid fa-phone"></i>
                 </h5>
@@ -47,7 +47,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <article className="bg-secondaryVariant p-5 rounded-3xl text-center border border-transparent transition-all duration-300 hover:bg-transparent hover:border-primaryVariant">
+              <article className="contact-btn">
                 <h5>
                   Location <i className="fa-solid fa-location-dot"></i>
                 </h5>
@@ -61,21 +61,21 @@ function Contact() {
             onSubmit={sendEmail}
           >
             <input
-              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
+              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               type="text"
               name="name"
               placeholder="Nom"
               required
             />
             <input
-              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
+              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               type="email"
               name="email"
               placeholder="Email"
               required
             />
             <textarea
-              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant"
+              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               name="message"
               rows="10"
               placeholder="Message"

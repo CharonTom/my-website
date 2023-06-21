@@ -7,7 +7,7 @@
   }
 
   .global-style {
-    @apply bg-texture bg-secondary font-primary text-white;
+    @apply bg-texture bg-secondary dark:bg-bgLightMode dark:bg-none font-primary text-white transition-all duration-300;
   }
 
   .section {
@@ -18,7 +18,7 @@
     @apply text-[27px] font-bold;
   }
   h2 {
-    @apply font-secondary text-primary my-6 text-center text-[24px] font-semibold;
+    @apply font-secondary text-primary my-6 text-center text-[24px] font-semibold dark:text-secondary;
   }
 
   h3 {
@@ -40,6 +40,21 @@
   }
   .bg-header {
     @apply bg-gradient-to-b from-primary to-secondary;
+  }
+  .bg-light-header {
+    @apply bg-gradient-to-t from-bgLightMode to-primary;
+  }
+
+  .bg-nav {
+    @apply bg-gradient-to-r from-primary to-light;
+  }
+  .bg-light-nav {
+    @apply bg-gradient-to-l from-bgLightMode to-primary;
+  }
+  .contact-btn {
+    @apply dark:bg-primary dark:hover:bg-transparent bg-secondaryVariant dark:text-secondary p-5 rounded-3xl text-center
+     border border-transparent transition-all duration-300
+      hover:bg-transparent hover:border-primaryVariant;
   }
 }
 

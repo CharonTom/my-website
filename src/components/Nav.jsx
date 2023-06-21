@@ -14,7 +14,7 @@ function Nav() {
     <nav className="fixed bottom-4 lg:bottom-9 z-10 w-full">
       <div className="container mx-auto">
         <div
-          className="border-2 border-light rounded-full bg-gradient-to-r from-primary to-light 
+          className="border-2 border-light dark:border-primary rounded-full bg-nav dark:bg-light-nav
         flex justify-around items-center h-[70px] w-full max-w-[430px] mx-auto"
         >
           <Link

@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: ["class", '[data-mode="light"]'],
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {

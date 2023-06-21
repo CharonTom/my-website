@@ -10,16 +10,17 @@ import Nav from "./components/Nav";
 import ScrollToTop from "./components/ScrollToTop";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { ThemeProvider } from "./contexts/LightContext";
+import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
-    <div className="global-style">
-      <Router>
+    <Router>
+      <div className="global-style">
         <Header />
         <Nav />
         <Hero />
@@ -28,8 +29,8 @@ function App() {
         <Contact />
         <ScrollToTop />
         <Footer />
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
