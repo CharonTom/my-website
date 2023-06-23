@@ -6,6 +6,11 @@
   body {
   }
 
+  input,
+  textarea {
+    @apply focus:outline-none;
+  }
+
   .global-style {
     @apply bg-texture bg-secondary dark:bg-bgLightMode dark:bg-none font-primary text-white transition-all duration-300;
   }
@@ -70,9 +75,7 @@
     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
-/* .active {
-  transform: scale(1.25);
-} */
+
 .bg-skill-cards {
   background: linear-gradient(rgba(255, 255, 255, 0.6), #2c2c6c);
 }

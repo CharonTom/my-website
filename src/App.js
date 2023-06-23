@@ -19,8 +19,8 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className="global-style">
+    <div className="global-style overflow-hidden">
+      <Router>
         <Header />
         <Nav />
         <Hero />
@@ -29,8 +29,8 @@ function App() {
         <Contact />
         <ScrollToTop />
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
