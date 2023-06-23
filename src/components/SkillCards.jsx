@@ -11,7 +11,7 @@ function SkillCards({ logo, score, name }) {
         <img
           src={logo}
           alt="logo's technos"
-          className="h-[50px] w-[50px]  lg:h-[80px] lg:w-[80px]"
+          className="h-[50px] w-[50px]  lg:h-[80px] lg:w-[80px] rounded-full"
         />
       </div>
       <div className="text-[12px] lg:text-base">{name}</div>

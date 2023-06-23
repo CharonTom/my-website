@@ -6,6 +6,7 @@ import logoCSS from "../assets/logos/css.png";
 import logoJS from "../assets/logos/js.png";
 import logoSass from "../assets/logos/sass.png";
 import logoTailwind from "../assets/logos/tailwindCSS.png";
+import logoBootstrap from "../assets/logos/bootstrap.png";
 import logoNodeJS from "../assets/logos/nodejs.png";
 import logoMongo from "../assets/logos/mongoDB.png";
 import logoPostman from "../assets/logos/postman.png";
@@ -29,16 +30,13 @@ function Skills() {
                 className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5"
                 data-aos="fade-up"
               >
-                <SkillCards name={"React"} logo={logoReact} score={4} />
-                <SkillCards name={"HMTL"} logo={logoHTML} score={5} />
-                <SkillCards name={"CSS"} logo={logoCSS} score={5} />
-                <SkillCards name={"JavaScript"} logo={logoJS} score={4} />
-                <SkillCards name={"Sass"} logo={logoSass} score={5} />
-                <SkillCards
-                  name={"TailwindCSS"}
-                  logo={logoTailwind}
-                  score={4}
-                />
+                <SkillCards name="HMTL" logo={logoHTML} score={5} />
+                <SkillCards name="CSS" logo={logoCSS} score={5} />
+                <SkillCards name="JavaScript" logo={logoJS} score={4} />
+                <SkillCards name="React" logo={logoReact} score={4} />
+                <SkillCards name="Sass" logo={logoSass} score={5} />
+                <SkillCards name="TailwindCSS" logo={logoTailwind} score={4} />
+                <SkillCards name="Bootstrap" logo={logoBootstrap} score={4} />
               </div>
             </div>
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">

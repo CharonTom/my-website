@@ -14,7 +14,7 @@ export default function SwitchLanguage() {
       value={language}
       onChange={switchAndRefresh}
       className="bg-dark-switch dark:bg-bgLightMode font-primary text-sm dark:text-secondary rounded-2xl h-[26px] w-[50px] input {
-        focus:outline-none
+        focus:outline-none pl-1
       } "
     >
       <option className="text-sm">FR</option>
