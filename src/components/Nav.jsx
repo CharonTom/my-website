@@ -1,5 +1,4 @@
 import React from "react";
-//import { Link } from "react-router-dom";
 import profilLogo from "../assets/logos/profil.png";
 import skillLogo from "../assets/logos/skill.png";
 import portfolioLogo from "../assets/logos/portfolio.png";
