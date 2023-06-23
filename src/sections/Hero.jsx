@@ -28,11 +28,11 @@ function Hero() {
                 <span className="mr-2"> {translate[language].Iam}</span>
                 <TypeAnimation
                   sequence={[
-                    "Développeur Web",
+                    translate[language].dev1,
                     2000,
-                    "Intégrateur Web",
+                    translate[language].dev2,
                     2000,
-                    "Développeur React",
+                    translate[language].dev3,
                     2000,
                   ]}
                   speed={20}

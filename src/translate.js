@@ -4,9 +4,9 @@ const translate = {
     Hi: "Hi !",
     MyName: "My name is ",
     Iam: "I'am a",
-    Dev1: "Web Developper",
-    Dev2: "Web integrator",
-    Dev3: "React Developpeur",
+    dev1: "Web Developper",
+    dev2: "Web integrator",
+    dev3: "React Developpeur",
     speech: `Passionate about web development and freshly graduated. I put my skills at the service of a company
         looking for a Front-End Developer. Through a course of
         extensive training on the React Framework, I
@@ -45,9 +45,9 @@ const translate = {
     Hi: "Bonjour !",
     MyName: "Je m'appelle ",
     Iam: "Je suis",
-    Dev1: "Développeur Web",
-    Dev2: "Intégrateur Web",
-    Dev3: "Développeur React",
+    dev1: "Développeur Web",
+    dev2: "Intégrateur Web",
+    dev3: "Développeur React",
     speech: ` Passionné par le développement web et fraichement diplômé dans
     le secteur. Je mets mes compétences au service d’une entreprise
     recherchant un développeur Front-End. Grâce à un parcours de

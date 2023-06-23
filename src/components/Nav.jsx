@@ -89,50 +89,42 @@ function Nav() {
               />
             </div>
           </Link>
-          <Link
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            to="cursor-pointer"
+          <a
+            href="https://github.com/CharonTom"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-[40px] border-2 border-light rounded-full hover:scale-125 transition
+            duration-500 ease-in-out relative cursor-pointer"
           >
-            <div
-              className="relative w-[40px] border-2 border-light rounded-full hover:scale-125 
-            transition duration-500 ease-in-out "
-            >
-              <img
-                src={linkedinLogo}
-                alt="link's logo"
-                className="h-full rounded-full"
-              />
-              <img
-                className="absolute -bottom-[5px] -right-[5px] w-[18px]"
-                src={externeLogo}
-                alt=""
-              />
-            </div>
-          </Link>
-          <Link
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            to="cursor-pointer"
+            <img
+              className="h-full rounded-full"
+              src={githubLogo}
+              alt="external link pictogram"
+            />
+            <img
+              className="absolute -bottom-[5px] -right-[5px] w-[18px]"
+              src={externeLogo}
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tom-charon/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative w-[40px] border-2 border-light rounded-full hover:scale-125 transition
+            duration-500 ease-in-out  cursor-pointer relative"
           >
-            <div
-              className="relative w-[40px] border-2 border-light rounded-full hover:scale-125 transition
-             duration-500 ease-in-out "
-            >
-              <img
-                src={githubLogo}
-                alt="link's logo"
-                className="h-full rounded-full"
-              />
-              <img
-                className="absolute -bottom-[5px] -right-[5px] w-[18px]"
-                src={externeLogo}
-                alt=""
-              />
-            </div>
-          </Link>
+            <img
+              className="h-full rounded-full"
+              src={linkedinLogo}
+              alt="external link pictogram"
+            />
+            <img
+              className="absolute -bottom-[5px] -right-[5px] w-[18px]"
+              src={externeLogo}
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </nav>
