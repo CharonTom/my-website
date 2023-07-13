@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.618dcf23.css",
-    "main.js": "/my-website/static/js/main.97231568.js",
+    "main.js": "/my-website/static/js/main.1a7d4037.js",
     "static/media/my-website.png": "/my-website/static/media/my-website.aa0cef9bf6d6f2772af8.png",
     "static/media/kasa.png": "/my-website/static/media/kasa.9e3823a48d254ff7fe0b.png",
     "static/media/sass.png": "/my-website/static/media/sass.521ac7a296bb66e6547f.png",
@@ -10,7 +10,7 @@
     "static/media/panthere.png": "/my-website/static/media/panthere.e21620b0efdc8e49a612.png",
     "static/media/kanap.png": "/my-website/static/media/kanap.00fe8bfe70d72ef30a19.png",
     "static/media/js.png": "/my-website/static/media/js.ba0a928588f389c91981.png",
-    "static/media/CV2023.pdf": "/my-website/static/media/CV2023.a05484a971439c84fe90.pdf",
+    "static/media/CV2023.pdf": "/my-website/static/media/CV2023.a9386389c9d62ca99897.pdf",
     "static/media/photo-de-profil.png": "/my-website/static/media/photo-de-profil.74ab7fdf3da135493331.png",
     "static/media/external-link.png": "/my-website/static/media/external-link.811675038d07c59110df.png",
     "static/media/postman.png": "/my-website/static/media/postman.4fadad892c42866d5ced.png",
@@ -33,10 +33,10 @@
     "static/media/Moon.svg": "/my-website/static/media/Moon.1c08648cf17a3594b866b8a18858df52.svg",
     "index.html": "/my-website/index.html",
     "main.618dcf23.css.map": "/my-website/static/css/main.618dcf23.css.map",
-    "main.97231568.js.map": "/my-website/static/js/main.97231568.js.map"
+    "main.1a7d4037.js.map": "/my-website/static/js/main.1a7d4037.js.map"
   },
   "entrypoints": [
     "static/css/main.618dcf23.css",
-    "static/js/main.97231568.js"
+    "static/js/main.1a7d4037.js"
   ]
 }
