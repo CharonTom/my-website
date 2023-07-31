@@ -9,12 +9,12 @@ function ProjetCard({ titre, img, description, techno, button }) {
     <div
       className="min-w-[220px] rounded-xl  relative overflow-hidden
        bg-portfolio-cards transition-all p-4
-        flex flex-col gap-y-4 group"
+        flex flex-col gap-y-4 group "
       data-aos="fade-left"
     >
       <h3 className="">{titre}</h3>
       <div className="mx-auto transition-all duration-500 group-hover:scale-105">
-        <img className="w-full object-cover" src={img} alt="projet" />
+        <img className="w-full h-64 object-cover" src={img} alt="projet" />
       </div>
       <div className="relative flex flex-col gap-y-4 ">
         <p className="p-2 rounded-xl text-[14px] text-center border border-primary bg-portfolio-text  ">

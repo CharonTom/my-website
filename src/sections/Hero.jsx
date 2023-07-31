@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import CV from "../assets/CV2023.pdf";
 import Me from "../assets/img/photo-de-profil.png";
-import { useState, useRef, useContext } from "react";
+import { useState, useRef, useContext, useEffect } from "react";
 import translate from "../translate";
 import { LanguageContext } from "../contexts/LanguageContext";
 
@@ -10,6 +10,12 @@ function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   const refContent = useRef();
   const { language } = useContext(LanguageContext);
+  const [animationKey, setAnimationKey] = useState(0);
+
+  useEffect(() => {
+    // Changer la clé animationKey pour forcer le composant de la librairie à se mettre à jour
+    setAnimationKey((prevKey) => prevKey + 1);
+  }, [language]);
 
   return (
     <section className="section dark:text-secondary" id="hero">
@@ -27,6 +33,7 @@ function Hero() {
               <div className="font-semibold">
                 <span className="mr-2"> {translate[language].Iam}</span>
                 <TypeAnimation
+                  key={animationKey}
                   sequence={[
                     translate[language].dev1,
                     2000,

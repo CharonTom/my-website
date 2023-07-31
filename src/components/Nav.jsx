@@ -39,6 +39,7 @@ function Nav() {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={40}
             to="skills"
           >
             <div
@@ -57,6 +58,7 @@ function Nav() {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={40}
             to="portfolio"
           >
             <div

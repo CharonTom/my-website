@@ -36,7 +36,6 @@ function Skills() {
                 <SkillCards name="React" logo={logoReact} score={4} />
                 <SkillCards name="Sass" logo={logoSass} score={5} />
                 <SkillCards name="TailwindCSS" logo={logoTailwind} score={4} />
-                <SkillCards name="Bootstrap" logo={logoBootstrap} score={4} />
               </div>
             </div>
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">

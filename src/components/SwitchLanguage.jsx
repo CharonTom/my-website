@@ -4,15 +4,14 @@ import { LanguageContext } from "../contexts/LanguageContext";
 export default function SwitchLanguage() {
   const { language, setLanguage } = useContext(LanguageContext);
 
-  const switchAndRefresh = (e) => {
+  const switchLang = (e) => {
     setLanguage(e.target.value);
-    window.location.reload(false);
   };
 
   return (
     <select
       value={language}
-      onChange={switchAndRefresh}
+      onChange={switchLang}
       className="bg-dark-switch dark:bg-bgLightMode font-primary text-sm dark:text-secondary rounded-2xl h-[26px] w-[50px] input {
         focus:outline-none pl-1
       } "

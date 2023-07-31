@@ -1,29 +1,81 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext, useEffect } from "react";
 import emailjs from "emailjs-com";
 import translate from "../translate";
 import { LanguageContext } from "../contexts/LanguageContext";
-import { useContext } from "react";
 
 function Contact() {
   const { language } = useContext(LanguageContext);
-
-  const [isActive, SetIsActive] = useState(false);
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    SetIsActive(!isActive);
-    emailjs.sendForm(
-      "service_zz9atbd",
-      "template_1em0drt",
-      form.current,
-      "Btv5aHQm0kJBcOmXo"
-    );
-    e.target.reset();
+  const initialValues = {
+    name: "",
+    email: "",
+    message: "",
+  };
 
-    setTimeout(() => {
-      SetIsActive(isActive);
-    }, 1500);
+  const [formValues, setFormvalues] = useState(initialValues);
+  const [isActive, SetIsActive] = useState(false);
+  const [formError, setFormError] = useState({});
+
+  console.log(formValues);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormvalues({ ...formValues, [name]: value });
+    setFormError((prevErrors) => ({
+      ...prevErrors,
+      [name]: "",
+    }));
+  };
+
+  const verifyInput = (formValues) => {
+    const errorFields = {};
+
+    const regexName = /^[a-zA-ZÀ-ÿ\s'-]{1,20}$/;
+    if (!formValues.name) errorFields.name = translate[language].errorName2;
+    else if (!regexName.test(formValues.name))
+      errorFields.name = translate[language].errorName1;
+
+    const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!formValues.email) errorFields.email = translate[language].errorEmail2;
+    else if (!regexEmail.test(formValues.email))
+      errorFields.email = translate[language].errorEmail1;
+
+    const regexMessage = /^.{1,400}$/;
+    if (!formValues.message)
+      errorFields.message = translate[language].errorForm2;
+    else if (!regexMessage.test(formValues.message))
+      errorFields.message = translate[language].errorForm1;
+
+    return errorFields;
+  };
+
+  useEffect(() => {
+    setFormError({});
+  }, [language]);
+
+  const handleEmailSending = (e) => {
+    e.preventDefault();
+    const errors = verifyInput(formValues);
+
+    if (Object.keys(errors).length === 0) {
+      setFormError({});
+      setFormvalues(initialValues);
+      SetIsActive(!isActive);
+      emailjs.sendForm(
+        "service_zz9atbd",
+        "template_1em0drt",
+        form.current,
+        "Btv5aHQm0kJBcOmXo"
+      );
+      e.target.reset();
+
+      setTimeout(() => {
+        SetIsActive(isActive);
+      }, 1500);
+    } else {
+      setFormError(errors);
+    }
   };
   return (
     <section className="section container mx-auto" id="contact">
@@ -61,32 +113,46 @@ function Contact() {
               </article>
             </a>
           </div>
+          {/* form */}
           <form
             className="flex flex-col gap-[10px] "
             ref={form}
-            onSubmit={sendEmail}
+            onSubmit={handleEmailSending}
           >
             <input
               className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               type="text"
               name="name"
               placeholder={translate[language].nameInput}
-              required
+              value={formValues.name}
+              onChange={handleChange}
             />
+            {formError.name && (
+              <p className="text-red-500 text-sm">{formError.name}</p>
+            )}
             <input
               className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               type="email"
               name="email"
               placeholder="Email"
-              required
+              value={formValues.email}
+              onChange={handleChange}
             />
+            {formError.email && (
+              <p className="text-red-500 text-sm">{formError.email}</p>
+            )}
             <textarea
               className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               name="message"
               rows="10"
               placeholder="Message"
-              required
+              value={formValues.message}
+              onChange={handleChange}
             ></textarea>
+            {formError.message && (
+              <p className="text-red-500 text-sm">{formError.message}</p>
+            )}
+
             <button type="submit" className="second-btn">
               {translate[language].sendButton}
             </button>

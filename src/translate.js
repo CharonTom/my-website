@@ -39,6 +39,13 @@ const translate = {
       "This is of course my Portfolio, the site you are on. It was entirely designed with React and its libraries. I also used the TailwindCSS's Framework and EmailJS to redirect messages to my mailbox.",
     nameInput: "Name",
     messageSend: "Message send !",
+    errorName1:
+      "The name must be between 1 and 20 characters. No special characters or numbers.",
+    errorName2: "Name is required",
+    errorEmail1: "The adress has an incorrect format.",
+    errorEmail2: "Email is required",
+    errorForm1: "The message must have between 1 and 400 characters",
+    errorForm2: "Message is required",
   },
   FR: {
     headerText: "Développeur Web",
@@ -79,6 +86,13 @@ const translate = {
       "Il s'agit bien sûr de mon Portfolio, le site sur lequel vous vous trouvez. Il a été entièrement conçu avec React et ses librairies. J'ai également utilisé le Framework CSS TailwindCSS et EmailJS pour la redirection des messages sur ma boite mail.",
     nameInput: "Nom",
     messageSend: "Message envoyé !",
+    errorName1:
+      "Le nom doit faire entre 1 et 20 lettres sans chiffres ni symboles",
+    errorName2: "Un nom est obligatoire",
+    errorEmail1: "Le format de l'adresse est incorrecte.",
+    errorEmail2: "Un email est obligatoire",
+    errorForm1: "Le message peut contenir entre 1 et 400 lettres",
+    errorForm2: "Un message est obligatoire",
   },
 };
 export default translate;
