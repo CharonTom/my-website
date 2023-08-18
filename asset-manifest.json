@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.04e5478f.css",
-    "main.js": "/my-website/static/js/main.208e8ef3.js",
+    "main.css": "/my-website/static/css/main.cf2ec13d.css",
+    "main.js": "/my-website/static/js/main.da57a04c.js",
     "static/media/my-website.png": "/my-website/static/media/my-website.aa0cef9bf6d6f2772af8.png",
     "static/media/kasa.png": "/my-website/static/media/kasa.9e3823a48d254ff7fe0b.png",
     "static/media/sass.png": "/my-website/static/media/sass.521ac7a296bb66e6547f.png",
     "static/media/omf.png": "/my-website/static/media/omf.409e73ea0bc78debda95.png",
     "static/media/piiquante.png": "/my-website/static/media/piiquante.1ff464aa7b4bd78be5e3.png",
+    "static/media/booki.png": "/my-website/static/media/booki.f07d453fffac9e8f9d29.png",
     "static/media/panthere.png": "/my-website/static/media/panthere.e21620b0efdc8e49a612.png",
     "static/media/kanap.png": "/my-website/static/media/kanap.00fe8bfe70d72ef30a19.png",
     "static/media/js.png": "/my-website/static/media/js.ba0a928588f389c91981.png",
@@ -15,7 +16,9 @@
     "static/media/external-link.png": "/my-website/static/media/external-link.811675038d07c59110df.png",
     "static/media/postman.png": "/my-website/static/media/postman.4fadad892c42866d5ced.png",
     "static/media/wallpaper-dev.jpg": "/my-website/static/media/wallpaper-dev.419960377233dc6d5f85.jpg",
+    "static/media/auth.png": "/my-website/static/media/auth.2af8f46453de6c7d0ecc.png",
     "static/media/expressJS.png": "/my-website/static/media/expressJS.915b89629a5fefdb6ca0.png",
+    "static/media/mySQL.png": "/my-website/static/media/mySQL.60fe462b4dec8bbc0292.png",
     "static/media/github.png": "/my-website/static/media/github.ba57b0e0a8e0600a63e3.png",
     "static/media/html.png": "/my-website/static/media/html.f3aa7827cd5160f3fc1c.png",
     "static/media/tailwindCSS.png": "/my-website/static/media/tailwindCSS.36b2728bf0d14b7b7576.png",
@@ -32,11 +35,11 @@
     "static/media/Sun.svg": "/my-website/static/media/Sun.684fc35d88479e175fb4f8192d7ac223.svg",
     "static/media/Moon.svg": "/my-website/static/media/Moon.1c08648cf17a3594b866b8a18858df52.svg",
     "index.html": "/my-website/index.html",
-    "main.04e5478f.css.map": "/my-website/static/css/main.04e5478f.css.map",
-    "main.208e8ef3.js.map": "/my-website/static/js/main.208e8ef3.js.map"
+    "main.cf2ec13d.css.map": "/my-website/static/css/main.cf2ec13d.css.map",
+    "main.da57a04c.js.map": "/my-website/static/js/main.da57a04c.js.map"
   },
   "entrypoints": [
-    "static/css/main.04e5478f.css",
-    "static/js/main.208e8ef3.js"
+    "static/css/main.cf2ec13d.css",
+    "static/js/main.da57a04c.js"
   ]
 }
