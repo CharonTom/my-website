@@ -10,7 +10,6 @@ import Nav from "./components/Nav";
 import ScrollToTop from "./components/ScrollToTop";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { ThemeProvider } from "./contexts/LightContext";
 import { useEffect } from "react";
 
 function App() {

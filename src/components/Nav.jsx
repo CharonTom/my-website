@@ -12,20 +12,21 @@ function Nav() {
   return (
     <nav className="fixed bottom-4 lg:bottom-9 z-10 w-full">
       <div className="container mx-auto">
-        <div
+        <ul
           className="border-2 border-light dark:border-primary rounded-full bg-nav dark:bg-light-nav
         flex justify-around items-center h-[70px] w-full max-w-[430px] mx-auto"
         >
           <Link
             className="transition duration-500 ease-in-out cursor-pointer hover:scale-125 "
-            activeClass="active"
-            smooth={true}
-            spy={true}
             to="hero"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            duration={500}
           >
             <div
               className=" w-[40px] border-2 border-light rounded-full 
-            transition duration-500 ease-in-out "
+            transition duration-500 ease-in-out  "
             >
               <img
                 src={profilLogo}
@@ -35,12 +36,13 @@ function Nav() {
             </div>
           </Link>
           <Link
-            className="transition duration-500 ease-in-out cursor-pointer hover:scale-125 "
+            className="transition duration-500 ease-in-out cursor-pointer hover:scale-125"
             activeClass="active"
             smooth={true}
             spy={true}
-            offset={40}
+            offset={20}
             to="skills"
+            duration={500}
           >
             <div
               className=" w-[40px] border-2 border-light rounded-full 
@@ -58,7 +60,8 @@ function Nav() {
             activeClass="active"
             smooth={true}
             spy={true}
-            offset={40}
+            duration={500}
+            offset={10}
             to="portfolio"
           >
             <div
@@ -77,7 +80,9 @@ function Nav() {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={40}
             to="contact"
+            duration={500}
           >
             <div
               className=" w-[40px] border-2 border-light rounded-full
@@ -126,7 +131,7 @@ function Nav() {
               alt=""
             />
           </a>
-        </div>
+        </ul>
       </div>
     </nav>
   );

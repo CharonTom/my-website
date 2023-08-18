@@ -2,7 +2,7 @@ import translate from "../translate";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext } from "react";
 
-function ProjetCard({ titre, img, description, techno, button }) {
+function ProjetCard({ titre, img, description, technos, button }) {
   const { language } = useContext(LanguageContext);
 
   return (
@@ -22,7 +22,16 @@ function ProjetCard({ titre, img, description, techno, button }) {
         </p>
         <div className="">
           <h4 className="">{translate[language].usedTechnos}</h4>
-          <div className="">{techno}</div>
+          <div className="flex justify-around">
+            {technos.map((techno, index) => (
+              <img
+                key={index}
+                className="w-14 bg-white rounded-full border-2 border-primary"
+                src={techno.logo}
+                alt={techno.alt}
+              />
+            ))}
+          </div>
         </div>
         <div className="absolute bg-limpidBlue w-full h-full left-0 border border-2 border-gray-200 rounded-lg flex flex-col justify-center items-center -bottom-[calc(100%+100px)] group-hover:bottom-0 transition-all duration-700">
           {button}
@@ -31,4 +40,5 @@ function ProjetCard({ titre, img, description, techno, button }) {
     </div>
   );
 }
+
 export default ProjetCard;

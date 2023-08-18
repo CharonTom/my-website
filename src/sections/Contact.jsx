@@ -82,7 +82,10 @@ function Contact() {
       <div className="container">
         <h2 className="mb-12">{translate[language].contact}</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 ">
+          <div
+            className="w-[80%] lg:w-fit mx-auto flex flex-col gap-5 "
+            data-aos="fade-right"
+          >
             <a href="mailto:charon.s.tom@gmail.com">
               <article className="contact-btn">
                 <h5>
@@ -113,34 +116,42 @@ function Contact() {
               </article>
             </a>
           </div>
-          {/* form */}
+          {/*---------------------------- form--------------------------- */}
+
           <form
             className="flex flex-col gap-[10px] "
             ref={form}
             onSubmit={handleEmailSending}
+            data-aos="fade-left"
           >
-            <input
-              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
-              type="text"
-              name="name"
-              placeholder={translate[language].nameInput}
-              value={formValues.name}
-              onChange={handleChange}
-            />
-            {formError.name && (
-              <p className="text-red-500 text-sm">{formError.name}</p>
-            )}
-            <input
-              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={formValues.email}
-              onChange={handleChange}
-            />
-            {formError.email && (
-              <p className="text-red-500 text-sm">{formError.email}</p>
-            )}
+            <div className="flex gap-[10px]">
+              <div className="flex-1">
+                <input
+                  className="w-full p-2 rounded-lg bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
+                  type="text"
+                  name="name"
+                  placeholder={translate[language].nameInput}
+                  value={formValues.name}
+                  onChange={handleChange}
+                />
+                {formError.name && (
+                  <p className="text-red-500 text-sm mt-2">{formError.name}</p>
+                )}
+              </div>
+              <div className="flex-1">
+                <input
+                  className="w-full p-2 rounded-lg bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formValues.email}
+                  onChange={handleChange}
+                />
+                {formError.email && (
+                  <p className="text-red-500 text-sm mt-2">{formError.email}</p>
+                )}
+              </div>
+            </div>
             <textarea
               className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
               name="message"
@@ -156,14 +167,14 @@ function Contact() {
             <button type="submit" className="second-btn">
               {translate[language].sendButton}
             </button>
-            <div
-              className={` fixed  p-2 rounded-md border-2 border-light bg-primary text-secondary ${
-                !isActive ? `-bottom-20` : `bottom-[20%]`
-              } border w-fit left-[50%] z-20 transition-all duration-400 -ml-[81px]`}
-            >
-              {translate[language].messageSend}
-            </div>
           </form>
+          <div
+            className={`fixed p-2 rounded-md border-2 border-light bg-primary text-secondary ${
+              isActive ? "bottom-[20%]" : "-bottom-20"
+            } border w-fit left-1/2 z-20 transform -translate-x-1/2 transition-all duration-400`}
+          >
+            {translate[language].messageSend}
+          </div>
         </div>
       </div>
     </section>

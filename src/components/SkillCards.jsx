@@ -1,7 +1,6 @@
 import React from "react";
-import Stars from "./Stars";
 
-function SkillCards({ logo, score, name }) {
+function SkillCards({ logo, name }) {
   return (
     <article
       className=" h-[105px] w-[140px]   lg:h-[150px] lg:w-[200px] bg-skill-cards rounded-lg flex 
@@ -15,7 +14,6 @@ function SkillCards({ logo, score, name }) {
         />
       </div>
       <div className="text-[12px] lg:text-base">{name}</div>
-      <Stars score={score} />
     </article>
   );
 }
