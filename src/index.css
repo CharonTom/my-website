@@ -43,13 +43,15 @@
   .bg-portfolio-text {
     @apply bg-gradient-to-t from-primaryVariant to-secondaryVariant;
   }
+  .bg-filter-portfolio {
+    @apply bg-gradient-to-b from-primary to-light;
+  }
   .bg-header {
     @apply bg-gradient-to-b from-primary to-secondary;
   }
   .bg-light-header {
     @apply bg-gradient-to-t from-bgLightMode to-primary;
   }
-
   .bg-nav {
     @apply bg-gradient-to-r from-primary to-light;
   }
@@ -110,6 +112,11 @@
 
 .btn:hover {
   color: #1f1f38;
+}
+
+.btn.active {
+  color: #1f1f38;
+  background: #4db5ff; /* Définissez la couleur que vous souhaitez pour le texte actif */
 }
 
 .btn::before {
@@ -179,6 +186,7 @@
 .third-btn {
   color: #4db5ff;
   background: #1f1f38;
+  border: solid #4db5ff 1px;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;

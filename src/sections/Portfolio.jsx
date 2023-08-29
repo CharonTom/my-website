@@ -8,11 +8,17 @@ import { useContext, useState } from "react";
 
 function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   const { language } = useContext(LanguageContext);
   const projects = useTranslateForData();
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
+  };
+
+  const toggleShowAllProjects = () => {
+    setShowAllProjects(!showAllProjects);
   };
 
   // Filtrer les projets en fonction de la catégorie sélectionnée
@@ -22,6 +28,12 @@ function Portfolio() {
       : projects.filter((project) =>
           project.categories.includes(selectedCategory)
         );
+
+  const displayedProjects = showAllProjects
+    ? filteredProjects
+    : filteredProjects.slice(0, 3);
+
+  const shouldShowToggle = filteredProjects.length > 3;
 
   return (
     <section
@@ -36,7 +48,7 @@ function Portfolio() {
             className={`btn ${selectedCategory === "all" ? "active" : ""}`}
             onClick={() => handleCategorySelect("all")}
           >
-            Tous
+            {translate[language].filterButton1}
           </button>
 
           <button
@@ -45,7 +57,7 @@ function Portfolio() {
             }`}
             onClick={() => handleCategorySelect("intégration web")}
           >
-            Intégration Web
+            {translate[language].filterButton2}
           </button>
           <button
             className={`btn ${
@@ -78,7 +90,7 @@ function Portfolio() {
         </div>
         {/* Affichage des projets*/}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm-grid-cols-1 gap-10">
-          {filteredProjects.map((project) => (
+          {displayedProjects.map((project) => (
             <ProjetCard
               key={project.id}
               titre={project.titre}
@@ -95,6 +107,16 @@ function Portfolio() {
             />
           ))}
         </div>
+        {/* Bouton "Voir plus/Voir moins" */}
+        {shouldShowToggle && (
+          <div className="text-center flex justify-center mt-6">
+            <button className="btn" onClick={toggleShowAllProjects}>
+              {showAllProjects
+                ? `${translate[language].showLessButton}`
+                : `${translate[language].showMoreButton}`}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

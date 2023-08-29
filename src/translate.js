@@ -25,6 +25,10 @@ const translate = {
     visitWebsiteButton: "Visit the website !",
     presentationButton: "Project's presentation",
     seeCodeButton: "See the code on Github",
+    filterButton1: "All",
+    filterButton2: "Web Integration",
+    showMoreButton: "Show more",
+    showLessButton: "Show less",
     proj1:
       "Create a website prototype by integrating the models designed by a UI designer. The project was developed in HTML/CSS and preprocessor Sass while keeping a mobile-first approach. The graphics and animations were made without JavaScript ",
     proj2:
@@ -96,7 +100,7 @@ const translate = {
     proj4:
       "Hot Takes est une application web d'avis critiques spécialisé dans les sauces. Le but était de construire une API REST sécurisée qui respecte les règles de l'OWASP. L'application permet aux utilisateurs de poster et modifier des sauces avec également une fonction like et dislike.",
     proj5:
-      "Ce site web avait des problèmes de référencement. Le site a été analysé et amélioré pour réduire le temps de chargement et appliquer les bonnes pratiques du SEO et d'accessibilité. Un rapport d'optimisation a été réalisé pour indiquer les résultats pré et post optimisation.",
+      "Ce site web avait des problèmes de référencement. Il a été analysé et amélioré pour réduire son temps de chargement et appliquer les bonnes pratiques du SEO et d'accessibilité. Un rapport d'optimisation a été réalisé pour indiquer les résultats pré et post optimisation.",
     proj6:
       "Il s'agit bien sûr de mon Portfolio, le site sur lequel vous vous trouvez. Il a été entièrement conçu avec React et ses librairies. J'ai également utilisé le Framework CSS TailwindCSS et EmailJS pour la redirection des messages sur ma boite mail.",
     proj7:
@@ -105,6 +109,10 @@ const translate = {
       "Réalisation d'un portail d'authentification avec React, Node.js, Express et MongoDB. C'est un projet full-stack dans laquelle un utilisateur peut s'enregistrer et se connecter. L'application est sécurisée selon les règles de l'OWASP.",
     proj9:
       "Réalisation d'un portail d'authentification avec React, Node.js, Express et MySQL. Il s'agit du même projet que le précédent, mais cette fois-ci, j'ai utilisé MySQL pour stocker les données des utilisateurs dans une base de données relationelle.",
+    filterButton1: "Tous ",
+    filterButton2: "Intégration web",
+    showMoreButton: "Voir plus",
+    showLessButton: "Voir moins",
     visitWebsiteButton: "Visiter le site web !",
     presentationButton: "Présentation du projet",
     seeCodeButton: "Voir le code sur Github",
