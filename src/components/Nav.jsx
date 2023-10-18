@@ -96,7 +96,7 @@ function Nav() {
         </Link>
         <a
           href="https://github.com/CharonTom"
-          target="_blank"
+          target="_blank" // test
           rel="noopener noreferrer"
           className="relative w-[40px] mx-2 lg:mx-4 border-2 border-light rounded-full hover:scale-125 transition
             duration-500 ease-in-out relative cursor-pointer"
