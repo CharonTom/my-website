@@ -6,7 +6,7 @@ import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext } from "react";
 
 function Header() {
-  const { language } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext); // try
 
   return (
     <header className="backdrop-blur-sm w-full fixed z-20 shadow-lg ">
