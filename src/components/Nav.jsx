@@ -16,17 +16,14 @@ function Nav() {
         flex justify-around items-center h-[70px] w-full max-w-[430px] mx-auto"
       >
         <Link
-          className="transition duration-500 ease-in-out cursor-pointer hover:scale-125 "
+          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125 "
           to="hero"
           spy={true}
           smooth={true}
           activeClass="active"
           duration={500}
         >
-          <div
-            className=" w-[40px] mx-2 lg:mx-4 border-2 border-light rounded-full 
-            transition duration-500 ease-in-out  "
-          >
+          <div className="border-2 border-light rounded-full">
             <img
               src={profilLogo}
               alt="link's logo"
@@ -35,7 +32,7 @@ function Nav() {
           </div>
         </Link>
         <Link
-          className="transition duration-500 ease-in-out cursor-pointer hover:scale-125"
+          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125"
           activeClass="active"
           smooth={true}
           spy={true}
@@ -43,10 +40,7 @@ function Nav() {
           to="skills"
           duration={500}
         >
-          <div
-            className=" w-[40px] mx-2 lg:mx-4 border-2 border-light rounded-full 
-            transition duration-500 ease-in-out "
-          >
+          <div className="border-2 border-light rounded-full">
             <img
               src={skillLogo}
               alt="link's logo"
@@ -55,7 +49,7 @@ function Nav() {
           </div>
         </Link>
         <Link
-          className="transition duration-500 ease-in-out cursor-pointer hover:scale-125"
+          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125"
           activeClass="active"
           smooth={true}
           spy={true}
@@ -63,10 +57,7 @@ function Nav() {
           offset={10}
           to="portfolio"
         >
-          <div
-            className=" w-[40px] mx-2 lg:mx-4 border-2 border-light rounded-full 
-            transition duration-500 ease-in-out "
-          >
+          <div className="border-2 border-light rounded-full">
             <img
               src={portfolioLogo}
               alt="link's logo"
@@ -75,7 +66,7 @@ function Nav() {
           </div>
         </Link>
         <Link
-          className="transition duration-500 ease-in-out cursor-pointer hover:scale-125"
+          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125"
           activeClass="active"
           smooth={true}
           spy={true}
@@ -83,10 +74,7 @@ function Nav() {
           to="contact"
           duration={500}
         >
-          <div
-            className=" w-[40px]  mx-2 lg:mx-4 border-2 border-light rounded-full
-            transition duration-500 ease-in-out "
-          >
+          <div className="border-2 border-light rounded-full">
             <img
               src={contactLogo}
               alt="link's logo"
@@ -96,7 +84,7 @@ function Nav() {
         </Link>
         <a
           href="https://github.com/CharonTom"
-          target="_blank" // test
+          target="_blank"
           rel="noopener noreferrer"
           className="relative w-[40px] mx-2 lg:mx-4 border-2 border-light rounded-full hover:scale-125 transition
             duration-500 ease-in-out relative cursor-pointer"

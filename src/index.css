@@ -12,7 +12,7 @@
   }
 
   .global-style {
-    @apply bg-texture bg-secondary dark:bg-bgLightMode dark:bg-none font-primary text-white transition-all duration-300;
+    @apply bg-secondary dark:bg-bgLightMode font-primary text-white transition-all duration-300;
   }
 
   .section {

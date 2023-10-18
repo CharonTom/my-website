@@ -9,12 +9,12 @@ function Header() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <header className="bg-header dark:bg-light-header w-full fixed z-20 shadow-lg ">
-      <div className="container mx-auto flex justify-between items-center ">
+    <header className="backdrop-blur-sm w-full fixed z-20 shadow-lg ">
+      <div className="container mx-auto flex justify-between items-center py-4 lg:px-10">
         <div className="p-[8px] dark:text-secondary">
           <span className="font-semibold text-[18px]">Tom Charon</span>
-          <br />
-          {translate[language].headerText}
+          {/* <br />
+          {translate[language].headerText} */}
         </div>
         <div className="flex items-center gap-x-5">
           <div>
