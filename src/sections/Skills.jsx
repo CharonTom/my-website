@@ -19,11 +19,11 @@ function Skills() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <section className="section relative" id="skills">
-      <div class="blur-[100px] bg-tertiary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"></div>
-      <div className="mx-auto">
+    <section className="section" id="skills">
+      <div className="mx-auto gradient-top">
         <h2 className=""> {translate[language].skills}</h2>
-        <div className="sm:bg-workBg bg-cover p-6">
+        <div className="sm:bg-workBg gradient-bottom bg-cover p-6 overflow-hidden relative">
+          <div class="blur-[100px] bg-tertiary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"></div>
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">
               <h3 className="">Front-End</h3>

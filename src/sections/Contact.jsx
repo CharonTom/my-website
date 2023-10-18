@@ -130,7 +130,7 @@ function Contact() {
             <div className="flex gap-[10px]">
               <div className="flex-1">
                 <input
-                  className="w-full p-2 rounded-lg bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
+                  className="w-full p-2 rounded-lg bg-transparent border border-1 border-primary dark:border-primary dark:text-secondary"
                   type="text"
                   name="name"
                   placeholder={translate[language].nameInput}
@@ -143,7 +143,7 @@ function Contact() {
               </div>
               <div className="flex-1">
                 <input
-                  className="w-full p-2 rounded-lg bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
+                  className="w-full p-2 rounded-lg bg-transparent border border-1 border-primary dark:border-primary dark:text-secondary"
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -156,7 +156,7 @@ function Contact() {
               </div>
             </div>
             <textarea
-              className="p-2 rounded-lg resize-none bg-transparent border border-2 border-primaryVariant dark:border-primary dark:text-secondary"
+              className="p-2 rounded-lg resize-none bg-transparent border border-1 border-primary dark:border-primary dark:text-secondary"
               name="message"
               rows="10"
               placeholder="Message"
