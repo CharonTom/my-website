@@ -18,18 +18,20 @@ function Hero() {
   }, [language]);
 
   return (
-    <section className="section dark:text-secondary" id="hero">
+    <section className="section dark:text-secondary relative" id="hero">
+      <div class="blur-[100px] bg-primary rounded-full absolute top-[60%] left-[-10%] w-[25%] h-[20%]"></div>
+      <div class="blur-[100px] bg-tertiary rounded-full absolute top-[30%] right-[15%] w-[25%] h-[50%]"></div>
+
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
           <div data-aos="fade-right">
             {/* text hi */}
-            <div className="text-center lg:text-left mb-5">
+            <div className="text-center lg:text-left mb-5 relative">
               <p className="font-semibold"> {translate[language].Hi}</p>
               <h1>
                 {translate[language].MyName}
                 <span className="text-primary">Tom</span>
               </h1>
-
               <div className="font-semibold">
                 <span className="mr-2"> {translate[language].Iam}</span>
                 <TypeAnimation

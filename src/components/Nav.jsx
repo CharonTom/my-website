@@ -12,7 +12,7 @@ function Nav() {
   return (
     <nav className="fixed bottom-4 lg:bottom-5 z-10 mx-auto left-1/2 transform -translate-x-1/2">
       <ul
-        className="border-2 border-light dark:border-primary rounded-full bg-nav dark:bg-light-nav
+        className="border-2 border-gray dark:border-primary rounded-full bg-nav dark:bg-light-nav
         flex justify-around items-center h-[70px] w-full max-w-[430px] mx-auto"
       >
         <Link
@@ -23,7 +23,7 @@ function Nav() {
           activeClass="active"
           duration={500}
         >
-          <div className="border-2 border-light rounded-full">
+          <div className="border-2 border-gray rounded-full">
             <img
               src={profilLogo}
               alt="link's logo"
@@ -40,7 +40,7 @@ function Nav() {
           to="skills"
           duration={500}
         >
-          <div className="border-2 border-light rounded-full">
+          <div className="border-2 border-gray rounded-full">
             <img
               src={skillLogo}
               alt="link's logo"
@@ -57,7 +57,7 @@ function Nav() {
           offset={10}
           to="portfolio"
         >
-          <div className="border-2 border-light rounded-full">
+          <div className="border-2 border-gray rounded-full">
             <img
               src={portfolioLogo}
               alt="link's logo"
@@ -74,7 +74,7 @@ function Nav() {
           to="contact"
           duration={500}
         >
-          <div className="border-2 border-light rounded-full">
+          <div className="border-2 border-gray rounded-full">
             <img
               src={contactLogo}
               alt="link's logo"
@@ -86,7 +86,7 @@ function Nav() {
           href="https://github.com/CharonTom"
           target="_blank"
           rel="noopener noreferrer"
-          className="relative w-[40px] mx-2 lg:mx-4 border-2 border-light rounded-full hover:scale-125 transition
+          className="relative w-[40px] mx-2 lg:mx-4 border-2 border-gray rounded-full hover:scale-125 transition
             duration-500 ease-in-out relative cursor-pointer"
         >
           <img
@@ -104,7 +104,7 @@ function Nav() {
           href="https://www.linkedin.com/in/tom-charon/"
           target="_blank"
           rel="noopener noreferrer"
-          className="relative w-[40px] mx-2 lg:mx-4 border-2 border-light rounded-full hover:scale-125 transition
+          className="relative w-[40px] mx-2 lg:mx-4 border-2 border-gray rounded-full hover:scale-125 transition
             duration-500 ease-in-out  cursor-pointer relative"
         >
           <img

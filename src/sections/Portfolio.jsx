@@ -36,11 +36,10 @@ function Portfolio() {
   const shouldShowToggle = filteredProjects.length > 3;
 
   return (
-    <section
-      id="portfolio"
-      className="section container overflow-hidden mx-auto"
-    >
-      <div className="container">
+    <section id="portfolio" className="section overflow-hidden  relative">
+      <div class="blur-[100px] bg-primary rounded-full absolute top-[350px] left-[10px] w-[180px] h-[180px]"></div>
+      <div class="blur-[100px] bg-tertiary rounded-full absolute top-[250px] right-[180px] w-[280px] h-[280px]"></div>
+      <div className="container mx-auto">
         <h2 className="">{translate[language].portfolio}</h2>
         {/* Boutons de filtrage */}
         <div className="flex flex-wrap justify-center space-x-4 mb-8">

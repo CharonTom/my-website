@@ -19,7 +19,8 @@ function Skills() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <section className="section" id="skills">
+    <section className="section relative" id="skills">
+      <div class="blur-[100px] bg-tertiary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"></div>
       <div className="mx-auto">
         <h2 className=""> {translate[language].skills}</h2>
         <div className="sm:bg-workBg bg-cover p-6">
