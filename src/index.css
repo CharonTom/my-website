@@ -59,9 +59,8 @@
     @apply bg-gradient-to-l from-bgLightMode to-primary;
   }
   .contact-btn {
-    @apply dark:bg-primary dark:hover:bg-transparent bg-secondaryVariant dark:text-secondary p-5 rounded-3xl text-center
-     border border-transparent transition-all duration-300
-      hover:bg-transparent hover:border-primaryVariant;
+    @apply dark:bg-primary dark:text-secondary p-5 rounded-2xl text-center
+     border border-primary;
   }
 }
 
