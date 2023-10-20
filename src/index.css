@@ -50,7 +50,7 @@
     @apply bg-gradient-to-b from-primary to-secondary;
   }
   .bg-light-header {
-    @apply bg-gradient-to-t from-bgLightMode to-primary;
+    @apply bg-gradient-to-t from-gray to-primaryVariant;
   }
   .bg-nav {
     @apply bg-gradient-to-r from-primary to-light;
@@ -59,7 +59,7 @@
     @apply bg-gradient-to-l from-bgLightMode to-primary;
   }
   .contact-btn {
-    @apply dark:bg-primary dark:text-secondary p-5 rounded-2xl text-center
+    @apply dark:text-secondary p-5 rounded-2xl text-center
      border border-primary;
   }
 }

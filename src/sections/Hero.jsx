@@ -19,7 +19,7 @@ function Hero() {
 
   return (
     <section className="section dark:text-secondary relative" id="hero">
-      <div class="blur-[100px] bg-primary rounded-full absolute top-[70%] left-[-10%] w-[25%] h-[20%]"></div>
+      <div class="blur-[100px] bg-primary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"></div>
       <div class="blur-[100px] bg-tertiary rounded-full absolute top-[30%] right-[15%] w-[25%] h-[50%]"></div>
 
       <div className="container mx-auto">
