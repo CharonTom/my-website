@@ -13,14 +13,14 @@ function Hero() {
   const [animationKey, setAnimationKey] = useState(0);
 
   useEffect(() => {
-    // Changer la clé animationKey pour forcer le composant de la librairie à se mettre à jour
+    // Changer la clé animationKey pour forcer le composant de la librairie à se mettre à jour.
     setAnimationKey((prevKey) => prevKey + 1);
   }, [language]);
 
   return (
     <section className="section dark:text-secondary relative" id="hero">
-      <div class="blur-[100px] bg-primary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"></div>
-      <div class="blur-[100px] bg-tertiary rounded-full absolute top-[30%] right-[15%] w-[25%] h-[50%]"></div>
+      <div className="blur-[100px] bg-primary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"></div>
+      <div className="blur-[100px] bg-tertiary rounded-full absolute top-[30%] right-[15%] w-[25%] h-[50%]"></div>
 
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">
