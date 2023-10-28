@@ -17,6 +17,22 @@ import translate from "../translate";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext } from "react";
 
+const skillsData = [
+  { name: "JavaScript", logo: logoJS },
+  { name: "TypeScript", logo: logoTS },
+  { name: "React", logo: logoReact },
+  { name: "Next", logo: logoNext },
+  { name: "Sass", logo: logoSass },
+  { name: "Bootstrap", logo: logoBootstrap },
+  { name: "TailwindCSS", logo: logoTailwind },
+  { name: "Node.js", logo: logoNodeJS },
+  { name: "Express.js", logo: logoExpress },
+  { name: "GraphQL", logo: logoGraphQL },
+  { name: "MySQL", logo: logoMySQL },
+  { name: "MongoDB", logo: logoMongo },
+  { name: "Postman", logo: logoPostman },
+];
+
 function Skills() {
   const { language } = useContext(LanguageContext);
 
@@ -29,31 +45,28 @@ function Skills() {
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">
               <h3 className="">Front-End</h3>
-              <div
-                className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5"
-                data-aos="fade-up"
-              >
-                <SkillCards name="JavaScript" logo={logoJS} />
-                <SkillCards name="TypeScript" logo={logoTS} />
-                <SkillCards name="React" logo={logoReact} />
-                <SkillCards name="Next" logo={logoNext} />
-                <SkillCards name="Sass" logo={logoSass} />
-                <SkillCards name="Bootstrap" logo={logoBootstrap} />
-                <SkillCards name="TailwindCSS" logo={logoTailwind} />
+              <div className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5">
+                {skillsData.slice(0, 7).map((skill, index) => (
+                  <SkillCards
+                    key={index}
+                    name={skill.name}
+                    logo={skill.logo}
+                    index={index}
+                  />
+                ))}
               </div>
             </div>
             <div className="flex flex-col bg-skill-stack p-4 gap-y-5 rounded-lg ">
               <h3 className="">Back-End</h3>
-              <div
-                className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5"
-                data-aos="fade-up"
-              >
-                <SkillCards name={"Node.js"} logo={logoNodeJS} />
-                <SkillCards name={"Express.js"} logo={logoExpress} />
-                <SkillCards name={"GraphQL"} logo={logoGraphQL} />
-                <SkillCards name={"MySQL"} logo={logoMongo} />
-                <SkillCards name={"MongoDB"} logo={logoMySQL} />
-                <SkillCards name={"Postman"} logo={logoPostman} />
+              <div className="flex flex-wrap justify-center items-start gap-2.5 lg:gap-5">
+                {skillsData.slice(7).map((skill, index) => (
+                  <SkillCards
+                    key={index}
+                    name={skill.name}
+                    logo={skill.logo}
+                    index={index}
+                  />
+                ))}
               </div>
             </div>
           </div>

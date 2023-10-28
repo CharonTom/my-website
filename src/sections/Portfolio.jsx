@@ -41,7 +41,9 @@ function Portfolio() {
       <div className="blur-[100px] bg-tertiary rounded-full absolute top-[250px] right-[180px] w-[280px] h-[280px]"></div>
       <div className="container mx-auto">
         <h2 className="">{translate[language].portfolio}</h2>
+
         {/* Boutons de filtrage */}
+
         <div className="flex flex-wrap justify-center space-x-4 mb-8">
           <button
             className={`btn ${selectedCategory === "all" ? "active" : ""}`}
@@ -87,7 +89,9 @@ function Portfolio() {
             Full-Stack
           </button>
         </div>
+
         {/* Affichage des projets*/}
+
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm-grid-cols-1 gap-10">
           {displayedProjects.map((project) => (
             <ProjetCard
@@ -106,7 +110,9 @@ function Portfolio() {
             />
           ))}
         </div>
+
         {/* Bouton "Voir plus/Voir moins" */}
+
         {shouldShowToggle && (
           <div className="text-center flex justify-center mt-6">
             <button className="btn" onClick={toggleShowAllProjects}>

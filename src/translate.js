@@ -15,6 +15,7 @@ const translate = {
         specialized in building web applications.`,
     cvButton: "Download my resume",
     aboutButton: "About me",
+
     // ------------------- Skills Part ------------------------
 
     skills: "My Skills",

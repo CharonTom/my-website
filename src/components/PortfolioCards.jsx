@@ -11,6 +11,7 @@ function ProjetCard({ titre, img, description, technos, button }) {
        bg-portfolio-cards transition-all p-3
         flex flex-col gap-y-4 group "
       data-aos="fade-left"
+      data-aos-once="true"
     >
       <h3 className="">{titre}</h3>
       <div className="mx-auto transition-all duration-500 group-hover:scale-105">

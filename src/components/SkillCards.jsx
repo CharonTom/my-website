@@ -1,8 +1,12 @@
 import React from "react";
 
-function SkillCards({ logo, name }) {
+function SkillCards({ logo, name, index }) {
+  const delay = 50 * index; // Délai basé sur la position de la carte
   return (
     <article
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-delay={delay}
       className=" h-[105px] w-[80px]   lg:h-[150px] lg:w-[115px] bg-skill-cards rounded-lg flex 
     justify-center items-center flex-col border-2 border-gray-300 hover:scale-[1.02] transition duration-300 shadow hover:shadow-primary "
     >
