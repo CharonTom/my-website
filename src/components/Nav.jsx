@@ -15,109 +15,110 @@ function Nav() {
         className="border-2 border-gray dark:border-primary rounded-full bg-nav dark:bg-light-nav
         flex justify-around items-center h-[70px] w-full max-w-[430px] mx-auto"
       >
-        <Link
-          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125 "
-          to="hero"
-          spy={true}
-          smooth={true}
-          activeClass="active"
-          duration={500}
-        >
-          <div className="border-2 border-gray rounded-full">
+        <li className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125">
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            duration={500}
+          >
+            <div className="border-2 border-gray rounded-full">
+              <img
+                src={profilLogo}
+                alt="link's logo"
+                className="h-full rounded-full w-[40px] h-[40px]"
+              />
+            </div>
+          </Link>
+        </li>
+        <li className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125">
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            duration={500}
+          >
+            <div className="border-2 border-gray rounded-full">
+              <img
+                src={skillLogo}
+                alt="link's logo"
+                className="h-full rounded-full w-[40px] h-[40px]"
+              />
+            </div>
+          </Link>
+        </li>
+        <li className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125">
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            duration={500}
+          >
+            <div className="border-2 border-gray rounded-full">
+              <img
+                src={portfolioLogo}
+                alt="link's logo"
+                className="h-full rounded-full w-[40px] h-[40px]"
+              />
+            </div>
+          </Link>
+        </li>
+        <li className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            activeClass="active"
+            duration={500}
+          >
+            <div className="border-2 border-gray rounded-full">
+              <img
+                src={contactLogo}
+                alt="link's logo"
+                className="h-full rounded-full w-[40px] h-[40px]"
+              />
+            </div>
+          </Link>
+        </li>
+        <li className="relative w-[40px] mx-2 lg:mx-4 border-2 border-gray rounded-full hover:scale-125 transition duration-500 ease-in-out relative cursor-pointer">
+          <a
+            href="https://github.com/CharonTom"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src={profilLogo}
-              alt="link's logo"
               className="h-full rounded-full w-[40px] h-[40px]"
+              src={githubLogo}
+              alt="external link pictogram"
             />
-          </div>
-        </Link>
-        <Link
-          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125"
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          offset={20}
-          to="skills"
-          duration={500}
-        >
-          <div className="border-2 border-gray rounded-full">
             <img
-              src={skillLogo}
-              alt="link's logo"
-              className="h-full rounded-full w-[40px] h-[40px]"
+              className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
+              src={externeLogo}
+              alt="external arrow"
             />
-          </div>
-        </Link>
-        <Link
-          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125"
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          duration={500}
-          offset={10}
-          to="portfolio"
-        >
-          <div className="border-2 border-gray rounded-full">
+          </a>
+        </li>
+        <li className="relative w-[40px] mx-2 lg:mx-4 border-2 border-gray rounded-full hover:scale-125 transition duration-500 ease-in-out relative cursor-pointer">
+          <a
+            href="https://www.linkedin.com/in/tom-charon/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
-              src={portfolioLogo}
-              alt="link's logo"
               className="h-full rounded-full w-[40px] h-[40px]"
+              src={linkedinLogo}
+              alt="external link pictogram"
             />
-          </div>
-        </Link>
-        <Link
-          className="mx-2 lg:mx-4 w-[40px] transition duration-500 ease-in-out cursor-pointer hover:scale-125"
-          activeClass="active"
-          smooth={true}
-          spy={true}
-          offset={40}
-          to="contact"
-          duration={500}
-        >
-          <div className="border-2 border-gray rounded-full">
             <img
-              src={contactLogo}
-              alt="link's logo"
-              className="h-full rounded-full w-[40px] h-[40px]"
+              className="absolute -bottom-[5px] -right-[5px] w-[18px] h-[18px]"
+              src={externeLogo}
+              alt="external arrow"
             />
-          </div>
-        </Link>
-        <a
-          href="https://github.com/CharonTom"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative w-[40px] mx-2 lg:mx-4 border-2 border-gray rounded-full hover:scale-125 transition
-            duration-500 ease-in-out relative cursor-pointer"
-        >
-          <img
-            className="h-full rounded-full w-[40px] h-[40px]"
-            src={githubLogo}
-            alt="external link pictogram"
-          />
-          <img
-            className="absolute -bottom-[5px] -right-[5px] w-[18px]"
-            src={externeLogo}
-            alt="external arrow"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/tom-charon/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative w-[40px] mx-2 lg:mx-4 border-2 border-gray rounded-full hover:scale-125 transition
-            duration-500 ease-in-out  cursor-pointer relative"
-        >
-          <img
-            className="h-full rounded-full w-[40px] h-[40px]"
-            src={linkedinLogo}
-            alt="external link pictogram"
-          />
-          <img
-            className="absolute -bottom-[5px] -right-[5px] w-[18px]"
-            src={externeLogo}
-            alt="external arrow"
-          />
-        </a>
+          </a>
+        </li>
       </ul>
     </nav>
   );

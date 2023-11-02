@@ -89,19 +89,19 @@ function Contact() {
           >
             <a href="mailto:charon.s.tom@gmail.com">
               <article className="contact-btn">
-                <h5>
+                <p>
                   Email <i className="fa-solid fa-envelope"></i>
-                </h5>
-                <h5>charon.s.tom@gmail.com</h5>
+                </p>
+                <p>charon.s.tom@gmail.com</p>
               </article>
             </a>
             <a href="tel:+33621042123">
               <article className="contact-btn">
-                <h5>
+                <p>
                   {translate[language].phone}{" "}
                   <i className="fa-solid fa-phone"></i>
-                </h5>
-                <h5> +33 6 21 04 21 23</h5>
+                </p>
+                <p> +33 6 21 04 21 23</p>
               </article>
             </a>
             <a
@@ -110,10 +110,10 @@ function Contact() {
               rel="noopener noreferrer"
             >
               <article className="contact-btn">
-                <h5>
+                <p>
                   Location <i className="fa-solid fa-location-dot"></i>
-                </h5>
-                <h5> 69000 Lyon, France</h5>
+                </p>
+                <p> 69000 Lyon, France</p>
               </article>
             </a>
           </div>

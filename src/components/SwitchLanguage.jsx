@@ -12,6 +12,7 @@ export default function SwitchLanguage() {
     <select
       value={language}
       onChange={switchLang}
+      aria-label="Sélection de la langue"
       className="bg-dark-switch dark:bg-bgLightMode font-primary text-sm dark:text-secondary rounded-2xl h-[26px] w-[50px] input {
         focus:outline-none pl-1
       } "
