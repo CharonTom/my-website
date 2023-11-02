@@ -33,7 +33,7 @@ function ProjetCard({ titre, img, description, technos, button }) {
         </div>
       </div>
       <div className="backdrop-blur-sm absolute p-6 bg-filter-portfolio w-full h-full left-0  rounded-lg flex flex-col justify-center items-center -bottom-[calc(100%+100px)] group-hover:bottom-0 transition-all duration-700">
-        <p className="p-4 rounded-xl text-[14px] text-black text-center">
+        <p className="p-4 rounded-xl text-[16px] text-black text-center">
           {description}
         </p>
 

@@ -1,11 +1,11 @@
 import React from "react";
-import profilLogo from "../assets/logos/profil.png";
-import skillLogo from "../assets/logos/skill.png";
-import portfolioLogo from "../assets/logos/portfolio.png";
-import contactLogo from "../assets/logos/contact.png";
-import linkedinLogo from "../assets/logos/linkedin.png";
-import githubLogo from "../assets/logos/github.png";
-import externeLogo from "../assets/logos/external-link.png";
+import profilLogo from "../assets/logos/profil.webp";
+import skillLogo from "../assets/logos/skill.webp";
+import portfolioLogo from "../assets/logos/portfolio.webp";
+import contactLogo from "../assets/logos/contact.webp";
+import linkedinLogo from "../assets/logos/linkedin.webp";
+import githubLogo from "../assets/logos/github.webp";
+import externeLogo from "../assets/logos/external-link.webp";
 import { Link } from "react-scroll";
 
 function Nav() {
