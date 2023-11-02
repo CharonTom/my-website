@@ -9,10 +9,10 @@ const translate = {
     dev1: "Web Developper",
     dev2: "Web integrator",
     dev3: "React Developpeur",
-    speech: `Passionate about web development and freshly graduated. I put my skills at the service of a company
-        looking for a Front-End Developer. Through a course of
-        extensive training on the React Framework, I
-        specialized in building web applications.`,
+    speech: `Passionate about web development,
+     I aspire to leverage my skills and motivation to work for a company that is hiring a web developer.
+    With a deep dive into the React.js and Node.js ecosystem,
+    I have specialized in designing and adapting websites and web applications.`,
     cvButton: "Download my resume",
     aboutButton: "About me",
 
@@ -82,12 +82,10 @@ const translate = {
     dev1: "Développeur Web",
     dev2: "Intégrateur Web",
     dev3: "Développeur React",
-    speech: ` Passionné par le développement web et fraichement diplômé dans
-    le secteur. Je mets mes compétences au service d’une entreprise
-    recherchant un développeur Front-End. Grâce à un parcours de
-    formation approfondi sur le Framework React, je me suis
-    spécialisé dans la conception et l’adaptation de sites et
-    d’applications web.`,
+    speech: `Passionné par le développement web, j’ambitionne de mettre mes compétences
+    et ma motivation au service d’une entreprise qui recrute un développeur web.
+    Grâce à un parcours approfondi sur l’écosystème React.js et Node.js, je me suis
+    spécialisé dans la conception et l’adaptation de sites et d’applications web.`,
     cvButton: "Télécharger mon CV",
     aboutButton: "À propos de moi",
     // ------------------- Skills Part ------------------------
@@ -110,17 +108,17 @@ const translate = {
     proj6:
       "Il s'agit bien sûr de mon Portfolio, le site sur lequel vous vous trouvez. Il a été entièrement conçu avec React et ses librairies. J'ai également utilisé le Framework CSS TailwindCSS et EmailJS pour la redirection des messages sur ma boite mail.",
     proj7:
-      "Ceci est le premier travail qui a marqué le début de ma reconversion. J'ai appris les bases du développement web en faisant cette intégration de maquette en HTML CSS. Il s'agit d'une page pour un site de réservation de logement en ligne. La maquette a été réalisé sur Figma par un designer UI",
+      "Ceci est le premier travail qui a marqué le début de ma reconversion. J'ai appris les bases du développement web en faisant cette intégration de maquette en HTML CSS. Il s'agit d'une page pour un site de réservation de logement en ligne. La maquette a été réalisée sur Figma par un designer UI",
     proj8:
       "Réalisation d'un portail d'authentification avec React, Node.js, Express et MongoDB. C'est un projet full-stack dans laquelle un utilisateur peut s'enregistrer et se connecter. L'application est sécurisée selon les règles de l'OWASP.",
     proj9:
       "Réalisation d'un portail d'authentification avec React, Node.js, Express et MySQL. Il s'agit du même projet que le précédent, mais cette fois-ci, j'ai utilisé MySQL pour stocker les données des utilisateurs dans une base de données relationelle.",
     proj10:
-      "Promptopia est une application Full-stack entièrement développer sur Next.js. Elle permet aux utilisateurs de pouvoir publier et partager leurs prompts préférés.",
+      "Promptopia est une application Full-stack entièrement développée sur Next.js. Elle permet aux utilisateurs de pouvoir publier et partager leurs prompts préférés.",
     proj11:
-      "Une petite application e-commerce développée avec React et TailwindCSS. L'objectif de cet exercice était d'apprendre à maîtriser la gestion de panier en utilisant le JSX offert par React et l'utilisation de context API. J'ai également utilisé Fake Store API qui est une API destiner aux prototypes de site e-commerce.",
+      "Une petite application e-commerce développée avec React et TailwindCSS. L'objectif de cet exercice était d'apprendre à maîtriser la gestion de panier en utilisant le JSX offert par React et l'utilisation de context API. J'ai également utilisé Fake Store API qui est une API destinée aux prototypes de site e-commerce.",
     proj12:
-      "TaskManager est une application Full-stack dont le back-end a été développer avec GraphQL. Il s'agit d'un gestionnaire de tâche qui permet aux utilisateurs de créer supprimer modifier et de classer les tâches par groupes.",
+      "TaskManager est une application Full-stack dont le back-end a été développer avec GraphQL. Il s'agit d'un gestionnaire de tâche qui permet aux utilisateurs de créer, supprimer, modifier et de classer les tâches par groupes.",
     filterButton1: "Tous ",
     filterButton2: "Intégration web",
     showMoreButton: "Voir plus",
