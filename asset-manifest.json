@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.9a1fa58e.css",
-    "main.js": "/my-website/static/js/main.82e4de87.js",
+    "main.js": "/my-website/static/js/main.74ce0cdb.js",
     "static/media/my-website.png": "/my-website/static/media/my-website.aa0cef9bf6d6f2772af8.png",
     "static/media/kasa.png": "/my-website/static/media/kasa.9e3823a48d254ff7fe0b.png",
     "static/media/sass.png": "/my-website/static/media/sass.521ac7a296bb66e6547f.png",
@@ -10,15 +10,18 @@
     "static/media/booki.png": "/my-website/static/media/booki.f07d453fffac9e8f9d29.png",
     "static/media/panthere.png": "/my-website/static/media/panthere.e21620b0efdc8e49a612.png",
     "static/media/kanap.png": "/my-website/static/media/kanap.00fe8bfe70d72ef30a19.png",
+    "static/media/promptopia.png": "/my-website/static/media/promptopia.692b23954fdfc66a879b.png",
     "static/media/CV2023.pdf": "/my-website/static/media/CV2023.73de18e5068845c26b9c.pdf",
     "static/media/photo-de-profil.png": "/my-website/static/media/photo-de-profil.74ab7fdf3da135493331.png",
     "static/media/external-link.png": "/my-website/static/media/external-link.811675038d07c59110df.png",
+    "static/media/ecommerce.png": "/my-website/static/media/ecommerce.6e1fabd29a19b8313ef4.png",
     "static/media/postman.png": "/my-website/static/media/postman.4fadad892c42866d5ced.png",
     "static/media/wallpaper-dev.jpg": "/my-website/static/media/wallpaper-dev.419960377233dc6d5f85.jpg",
     "static/media/auth.png": "/my-website/static/media/auth.2af8f46453de6c7d0ecc.png",
     "static/media/expressJS.png": "/my-website/static/media/expressJS.915b89629a5fefdb6ca0.png",
     "static/media/mySQL.png": "/my-website/static/media/mySQL.60fe462b4dec8bbc0292.png",
     "static/media/github.png": "/my-website/static/media/github.ba57b0e0a8e0600a63e3.png",
+    "static/media/task.png": "/my-website/static/media/task.2b76fbffd96a888af174.png",
     "static/media/tailwindCSS.png": "/my-website/static/media/tailwindCSS.36b2728bf0d14b7b7576.png",
     "static/media/linkedin.png": "/my-website/static/media/linkedin.29b32f7038d598766e72.png",
     "static/media/graphql.png": "/my-website/static/media/graphql.971205269f3fda4bc54d.png",
@@ -39,10 +42,10 @@
     "index.html": "/my-website/index.html",
     "static/media/Moon.svg": "/my-website/static/media/Moon.1c08648cf17a3594b866b8a18858df52.svg",
     "main.9a1fa58e.css.map": "/my-website/static/css/main.9a1fa58e.css.map",
-    "main.82e4de87.js.map": "/my-website/static/js/main.82e4de87.js.map"
+    "main.74ce0cdb.js.map": "/my-website/static/js/main.74ce0cdb.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1fa58e.css",
-    "static/js/main.82e4de87.js"
+    "static/js/main.74ce0cdb.js"
   ]
 }
