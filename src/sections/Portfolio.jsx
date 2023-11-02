@@ -1,8 +1,8 @@
 import React from "react";
-import { useTranslateForData } from "../project-datas";
+import translate from "../translate";
 import ProjetCard from "../components/PortfolioCards";
 import PortfolioButtonsCard from "../components/PortfolioButtonsCard";
-import translate from "../translate";
+import { useTranslateForData } from "../project-datas";
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext, useState } from "react";
 

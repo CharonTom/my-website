@@ -51,7 +51,12 @@ const translate = {
       "Create a login portal with React, Node.js, Express and MongoDB. It is a full-stack project in which a user can register and login. The application is secure according to the rules of the OWASP.",
     proj9:
       "Create a login portal with React, Node.js, Express and MySQL. This is the same project as the previous one, but this time I used MySQL to store the user's data in a relational database.",
-
+    proj10:
+      "Promptopia is a Full-stack application developed entirely on Next.js. It allows users to publish and share their favorite prompts.",
+    proj11:
+      "A small e-commerce application developed with React and TailwindCSS. The aim of this exercise was to learn to master shopping cart management using JSX and context API. I also used Fake Store API which is an API intended for e-commerce site prototypes.",
+    proj12:
+      "TaskManager is a Full-stack application whose back-end was developed with GraphQL. It's a task manager that allows users to create, delete, edit and sort tasks into groups.",
     // ------------------- Contact Part ------------------------
 
     contact: "Let's talk !",
@@ -110,6 +115,12 @@ const translate = {
       "Réalisation d'un portail d'authentification avec React, Node.js, Express et MongoDB. C'est un projet full-stack dans laquelle un utilisateur peut s'enregistrer et se connecter. L'application est sécurisée selon les règles de l'OWASP.",
     proj9:
       "Réalisation d'un portail d'authentification avec React, Node.js, Express et MySQL. Il s'agit du même projet que le précédent, mais cette fois-ci, j'ai utilisé MySQL pour stocker les données des utilisateurs dans une base de données relationelle.",
+    proj10:
+      "Promptopia est une application Full-stack entièrement développer sur Next.js. Elle permet aux utilisateurs de pouvoir publier et partager leurs prompts préférés.",
+    proj11:
+      "Une petite application e-commerce développée avec React et TailwindCSS. L'objectif de cet exercice était d'apprendre à maîtriser la gestion de panier en utilisant le JSX offert par React et l'utilisation de context API. J'ai également utilisé Fake Store API qui est une API destiner aux prototypes de site e-commerce.",
+    proj12:
+      "TaskManager est une application Full-stack dont le back-end a été développer avec GraphQL. Il s'agit d'un gestionnaire de tâche qui permet aux utilisateurs de créer supprimer modifier et de classer les tâches par groupes.",
     filterButton1: "Tous ",
     filterButton2: "Intégration web",
     showMoreButton: "Voir plus",

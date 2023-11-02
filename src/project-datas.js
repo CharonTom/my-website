@@ -3,13 +3,16 @@ import logoHTML from "./assets/logos/html.png";
 import logoCSS from "./assets/logos/css.png";
 import logoBootstrap from "./assets/logos/bootstrap.png";
 import logoJS from "./assets/logos/js.png";
+import logoTS from "./assets/logos/ts.png";
 import logoSass from "./assets/logos/sass.png";
 import logoTailwind from "./assets/logos/tailwindCSS.png";
 import logoNodeJS from "./assets/logos/nodejs.png";
 import logoMongo from "./assets/logos/mongoDB.png";
-import logoPostman from "./assets/logos/postman.png";
+import logoGraphQL from "./assets/logos/graphql.png";
 import logoExpress from "./assets/logos/expressJS.png";
 import logoMySQL from "./assets/logos/mySQL.png";
+import logoNext from "./assets/logos/next.png";
+
 import imageKanap from "./assets/img/kanap.png";
 import imageOMF from "./assets/img/omf.png";
 import imagePiiquante from "./assets/img/piiquante.png";
@@ -18,8 +21,13 @@ import imagePanthere from "./assets/img/panthere.png";
 import imageMyWebsite from "./assets/img/my-website.png";
 import imageAuth from "./assets/img/auth.png";
 import imageBooki from "./assets/img/booki.png";
+import imagePromptopia from "./assets/img/promptopia.png";
+import imageTask from "./assets/img/task.png";
+import imageEcommerce from "./assets/img/ecommerce.png";
+
 import { LanguageContext } from "./contexts/LanguageContext";
 import { useContext } from "react";
+
 import translate from "./translate";
 
 export function useTranslateForData() {
@@ -112,7 +120,6 @@ export function useTranslateForData() {
         { logo: logoNodeJS, alt: "NodeJS" },
         { logo: logoExpress, alt: "Express" },
         { logo: logoMongo, alt: "MongoDB" },
-        { logo: logoPostman, alt: "Postman" },
       ],
       buttons: [
         {
@@ -186,6 +193,10 @@ export function useTranslateForData() {
           link: "https://github.com/CharonTom/Booki",
         },
         {
+          text: translate[language].presentationButton,
+          link: "https://github.com/CharonTom/Booki/blob/main/README.md",
+        },
+        {
           text: translate[language].visitWebsiteButton,
           link: "https://charontom.github.io/Booki/",
         },
@@ -209,6 +220,10 @@ export function useTranslateForData() {
           text: translate[language].seeCodeButton,
           link: "https://github.com/CharonTom/Login-System-React-Node-Express-MongoDB",
         },
+        {
+          text: translate[language].presentationButton,
+          link: "https://github.com/CharonTom/Login-System-React-Node-Express-MongoDB/blob/main/README.md",
+        },
       ],
     },
     {
@@ -228,6 +243,87 @@ export function useTranslateForData() {
         {
           text: translate[language].seeCodeButton,
           link: "https://github.com/CharonTom/Login-System-React-Node-Express-MySQL",
+        },
+        {
+          text: translate[language].presentationButton,
+          link: "https://github.com/CharonTom/Login-System-React-Node-Express-MySQL/blob/main/README.md",
+        },
+      ],
+    },
+    {
+      id: 10,
+      categories: ["front-end", "full-stack", "back-end"],
+      img: imagePromptopia,
+      titre: "Promptopia",
+      description: translate[language].proj10,
+      technos: [
+        { logo: logoReact, alt: "React" },
+        { logo: logoTailwind, alt: "TailwindCSS" },
+        { logo: logoNext, alt: "Next.js" },
+        { logo: logoMongo, alt: "MongoDB" },
+      ],
+      buttons: [
+        {
+          text: translate[language].seeCodeButton,
+          link: "https://github.com/CharonTom/Promptopia",
+        },
+        {
+          text: translate[language].presentationButton,
+          link: "https://github.com/CharonTom/Promptopia/blob/main/README.md",
+        },
+        {
+          text: translate[language].visitWebsiteButton,
+          link: "https://promptopia-charontom.vercel.app",
+        },
+      ],
+    },
+    {
+      id: 11,
+      categories: ["front-end"],
+      img: imageEcommerce,
+      titre: "E-commerce website",
+      description: translate[language].proj11,
+      technos: [
+        { logo: logoReact, alt: "React" },
+        { logo: logoTailwind, alt: "TailwindCSS" },
+      ],
+      buttons: [
+        {
+          text: translate[language].seeCodeButton,
+          link: "https://github.com/CharonTom/React-Tailwind-E-commerce",
+        },
+        {
+          text: translate[language].presentationButton,
+          link: "https://github.com/CharonTom/React-Tailwind-E-commerce/blob/main/README.md",
+        },
+        {
+          text: translate[language].visitWebsiteButton,
+          link: "https://charontom.github.io/React-Tailwind-E-commerce/",
+        },
+      ],
+    },
+    {
+      id: 12,
+      categories: ["front-end", "full-stack", "back-end"],
+      img: imageTask,
+      titre: "Task Manager",
+      description: translate[language].proj12,
+      technos: [
+        { logo: logoReact, alt: "React" },
+        { logo: logoTS, alt: "TypeScript" },
+        { logo: logoTailwind, alt: "TailwindCSS" },
+        { logo: logoNodeJS, alt: "Node" },
+        { logo: logoGraphQL, alt: "GraphQL" },
+        { logo: logoMongo, alt: "MongoDB" },
+      ],
+      buttons: [
+        {
+          text: translate[language].seeCodeButton,
+          link: "https://github.com/CharonTom/JLO-Task-Manager-Front-end",
+        },
+        {
+          text: translate[language].presentationButton,
+          link: "https://github.com/CharonTom/JLO-Task-Manager-Front-end/blob/main/README.md",
         },
       ],
     },
