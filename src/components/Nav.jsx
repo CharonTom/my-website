@@ -27,7 +27,7 @@ function Nav() {
             <img
               src={profilLogo}
               alt="link's logo"
-              className="h-full rounded-full"
+              className="h-full rounded-full w-[40px] h-[40px]"
             />
           </div>
         </Link>
@@ -44,7 +44,7 @@ function Nav() {
             <img
               src={skillLogo}
               alt="link's logo"
-              className="h-full rounded-full"
+              className="h-full rounded-full w-[40px] h-[40px]"
             />
           </div>
         </Link>
@@ -61,7 +61,7 @@ function Nav() {
             <img
               src={portfolioLogo}
               alt="link's logo"
-              className="h-full rounded-full"
+              className="h-full rounded-full w-[40px] h-[40px]"
             />
           </div>
         </Link>
@@ -78,7 +78,7 @@ function Nav() {
             <img
               src={contactLogo}
               alt="link's logo"
-              className="h-full rounded-full"
+              className="h-full rounded-full w-[40px] h-[40px]"
             />
           </div>
         </Link>
@@ -90,14 +90,14 @@ function Nav() {
             duration-500 ease-in-out relative cursor-pointer"
         >
           <img
-            className="h-full rounded-full"
+            className="h-full rounded-full w-[40px] h-[40px]"
             src={githubLogo}
             alt="external link pictogram"
           />
           <img
             className="absolute -bottom-[5px] -right-[5px] w-[18px]"
             src={externeLogo}
-            alt=""
+            alt="external arrow"
           />
         </a>
         <a
@@ -108,14 +108,14 @@ function Nav() {
             duration-500 ease-in-out  cursor-pointer relative"
         >
           <img
-            className="h-full rounded-full"
+            className="h-full rounded-full w-[40px] h-[40px]"
             src={linkedinLogo}
             alt="external link pictogram"
           />
           <img
             className="absolute -bottom-[5px] -right-[5px] w-[18px]"
             src={externeLogo}
-            alt=""
+            alt="external arrow"
           />
         </a>
       </ul>
