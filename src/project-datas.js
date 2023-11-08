@@ -74,11 +74,15 @@ export function useTranslateForData() {
       buttons: [
         {
           text: translate[language].seeCodeButton,
-          link: "https://github.com/CharonTom/Kanap_P5",
+          link: "https://github.com/CharonTom/Kanap",
         },
         {
           text: translate[language].presentationButton,
-          link: "https://github.com/CharonTom/Kanap_P5/blob/main/README.md",
+          link: "https://github.com/CharonTom/Kanap/blob/main/README.md",
+        },
+        {
+          text: translate[language].visitWebsiteButton,
+          link: "https://charontom.github.io/Kanap/",
         },
       ],
     },
