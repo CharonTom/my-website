@@ -209,6 +209,35 @@ export function useTranslateForData() {
     {
       id: 8,
       categories: ["front-end", "full-stack", "back-end"],
+      img: imageTask,
+      titre: "Task Manager",
+      description: translate[language].proj12,
+      technos: [
+        { logo: logoReact, alt: "React" },
+        { logo: logoTS, alt: "TypeScript" },
+        { logo: logoTailwind, alt: "TailwindCSS" },
+        { logo: logoNodeJS, alt: "Node" },
+        { logo: logoGraphQL, alt: "GraphQL" },
+        { logo: logoMongo, alt: "MongoDB" },
+      ],
+      buttons: [
+        {
+          text: translate[language].seeCodeButton,
+          link: "https://github.com/CharonTom/JLO-Task-Manager-Front-end",
+        },
+        {
+          text: translate[language].presentationButton,
+          link: "https://github.com/CharonTom/JLO-Task-Manager-Front-end/blob/main/README.md",
+        },
+        {
+          text: translate[language].visitWebsiteButton,
+          link: "https://ubiquitous-meringue-e3582c.netlify.app/",
+        },
+      ],
+    },
+    {
+      id: 9,
+      categories: ["front-end", "full-stack", "back-end"],
       img: imageAuth,
       titre: "Login Portal (MongoDB)",
       description: translate[language].proj8,
@@ -231,7 +260,7 @@ export function useTranslateForData() {
       ],
     },
     {
-      id: 9,
+      id: 10,
       categories: ["front-end", "full-stack", "back-end"],
       img: imageAuth,
       titre: "Login Portal (MySQL)",
@@ -255,7 +284,7 @@ export function useTranslateForData() {
       ],
     },
     {
-      id: 10,
+      id: 11,
       categories: ["front-end", "full-stack", "back-end"],
       img: imagePromptopia,
       titre: "Promptopia",
@@ -282,7 +311,7 @@ export function useTranslateForData() {
       ],
     },
     {
-      id: 11,
+      id: 12,
       categories: ["front-end"],
       img: imageEcommerce,
       titre: "E-commerce website",
@@ -303,31 +332,6 @@ export function useTranslateForData() {
         {
           text: translate[language].visitWebsiteButton,
           link: "https://charontom.github.io/React-Tailwind-E-commerce/",
-        },
-      ],
-    },
-    {
-      id: 12,
-      categories: ["front-end", "full-stack", "back-end"],
-      img: imageTask,
-      titre: "Task Manager",
-      description: translate[language].proj12,
-      technos: [
-        { logo: logoReact, alt: "React" },
-        { logo: logoTS, alt: "TypeScript" },
-        { logo: logoTailwind, alt: "TailwindCSS" },
-        { logo: logoNodeJS, alt: "Node" },
-        { logo: logoGraphQL, alt: "GraphQL" },
-        { logo: logoMongo, alt: "MongoDB" },
-      ],
-      buttons: [
-        {
-          text: translate[language].seeCodeButton,
-          link: "https://github.com/CharonTom/JLO-Task-Manager-Front-end",
-        },
-        {
-          text: translate[language].presentationButton,
-          link: "https://github.com/CharonTom/JLO-Task-Manager-Front-end/blob/main/README.md",
         },
       ],
     },
