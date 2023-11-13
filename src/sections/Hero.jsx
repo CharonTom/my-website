@@ -19,8 +19,14 @@ function Hero() {
 
   return (
     <section className="section dark:text-secondary relative" id="hero">
-      <div className="blur-[100px] bg-primary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"></div>
-      <div className="blur-[100px] bg-tertiary rounded-full absolute top-[30%] right-[15%] w-[25%] h-[50%]"></div>
+      <div
+        style={{ transform: "translate3d(0,0,0)" }}
+        className="blur-[100px] bg-primary rounded-full absolute top-[70%] left-[-10%] w-[20%] h-[20%]"
+      ></div>
+      <div
+        style={{ transform: "translate3d(0,0,0)" }}
+        className="blur-[100px] bg-tertiary rounded-full absolute top-[30%] right-[15%] w-[25%] h-[50%]"
+      ></div>
 
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center gap-x-20 gap-y-5">

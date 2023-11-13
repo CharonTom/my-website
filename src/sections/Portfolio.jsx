@@ -37,8 +37,14 @@ function Portfolio() {
 
   return (
     <section id="portfolio" className="section overflow-hidden  relative">
-      <div className="blur-[100px] bg-primary rounded-full absolute top-[230px] left-[10px] w-[180px] h-[240px]"></div>
-      <div className="blur-[100px] bg-tertiary rounded-full absolute top-[250px] right-[180px] w-[280px] h-[280px]"></div>
+      <div
+        style={{ transform: "translate3d(0,0,0)" }}
+        className="blur-[100px] bg-primary rounded-full absolute top-[230px] left-[10px] w-[180px] h-[240px]"
+      ></div>
+      <div
+        style={{ transform: "translate3d(0,0,0)" }}
+        className="blur-[100px] bg-tertiary rounded-full absolute top-[250px] right-[180px] w-[280px] h-[280px]"
+      ></div>
       <div className="container mx-auto">
         <h2 className="">{translate[language].portfolio}</h2>
 

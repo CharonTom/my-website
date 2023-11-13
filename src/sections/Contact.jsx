@@ -77,9 +77,18 @@ function Contact() {
   };
   return (
     <section className="section relative" id="contact">
-      <div className="blur-[100px] bg-primary rounded-full absolute top-[30%] right-[-15%] w-[25%] h-[25%]"></div>
-      <div className="blur-[100px] bg-tertiary rounded-full absolute top-[40%] left-[-15%] w-[15%] h-[25%]"></div>
-      <div className="blur-[100px] bg-primary rounded-full absolute bottom-[-50%] left-[10%] w-[15%] h-[25%]"></div>
+      <div
+        style={{ transform: "translate3d(0,0,0)" }}
+        className="blur-[100px] bg-primary rounded-full absolute top-[30%] right-[-15%] w-[25%] h-[25%]"
+      ></div>
+      <div
+        style={{ transform: "translate3d(0,0,0)" }}
+        className="blur-[100px] bg-tertiary rounded-full absolute top-[40%] left-[-15%] w-[15%] h-[25%]"
+      ></div>
+      <div
+        style={{ transform: "translate3d(0,0,0)" }}
+        className="blur-[100px] bg-primary rounded-full absolute bottom-[-50%] left-[10%] w-[15%] h-[25%]"
+      ></div>
       <div className="container mx-auto">
         <h2 className="mb-12">{translate[language].contact}</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
